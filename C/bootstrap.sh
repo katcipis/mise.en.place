@@ -6,7 +6,7 @@ apt-get install -y pkg-config autogen autoconf build-essential git vim exuberant
 
 echo "Configuring git"
 git config --global user.name "Tiago Katcipis"
-git config --global user.email you@example.com
+git config --global user.email tiagokatcipis@gmail.com
 git config --global push.default simple
 
 echo "Installing some vim juice ;-)"
