@@ -1,0 +1,10 @@
+---
+- hosts: all
+  user: vagrant
+  sudo: yes
+
+  roles:
+      #- common
+      #- puppet
+      #- chef-client
+    - stuff
