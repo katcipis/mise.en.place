@@ -42,3 +42,10 @@
   tags:
     - common
     - tzdata
+
+- name: Disable IPv6
+  command: sysctl net.ipv6.conf.all.disable_ipv6=1
+  sudo: yes
+  tags:
+    - common
+    - ipv6
