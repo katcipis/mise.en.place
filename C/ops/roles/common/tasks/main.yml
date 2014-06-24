@@ -1,4 +1,11 @@
 ---
+- name: Disable IPv6
+  command: sysctl net.ipv6.conf.all.disable_ipv6=1
+  sudo: yes
+  tags:
+    - common
+    - ipv6
+
 - name: Update apt cache and upgrade system
   apt: upgrade=dist update-cache=yes
   sudo: yes
@@ -42,10 +49,3 @@
   tags:
     - common
     - tzdata
-
-- name: Disable IPv6
-  command: sysctl net.ipv6.conf.all.disable_ipv6=1
-  sudo: yes
-  tags:
-    - common
-    - ipv6
