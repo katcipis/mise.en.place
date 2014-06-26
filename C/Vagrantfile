@@ -15,6 +15,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "ansible" do |ansible|
     ansible.playbook = "provisioning/playbook.yml"
     ansible.sudo = true
+    ansible.host_key_checking = false
   end
 
   # The url from where the 'config.vm.box' box will be fetched if it
