@@ -1,0 +1,25 @@
+---
+- name: Install git
+  apt: pkg=git
+
+  sudo: yes
+  tags:
+    - git
+
+- name: Set git user.name to {{ git_user_name }}
+  command: git config --global user.name {{ git_user_name }}
+  sudo: yes
+  tags:
+    - git
+
+- name: Set git user.email to {{ git_user_email }}
+  command: git config --global user.email {{ git_user_email }}
+  sudo: yes
+  tags:
+    - git
+
+- name: Set git push.defaultl to {{ git_push_default }}
+  command: git config --global push.default {{ git_push_default }}
+  sudo: yes
+  tags:
+    - git
