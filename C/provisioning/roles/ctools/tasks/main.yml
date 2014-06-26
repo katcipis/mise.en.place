@@ -1,5 +1,5 @@
 ---
-- name: Install stuff
+- name: Install ctools
   apt: pkg={{ item }}
   with_items:
     - pkg-config
@@ -10,5 +10,5 @@
     - exuberant-ctags
   sudo: yes
   tags:
-    - stuff
+    - ctools
     - packages

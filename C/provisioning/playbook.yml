@@ -4,5 +4,5 @@
   sudo: yes
 
   roles:
-    - stuff
+    - ctools
     - git
