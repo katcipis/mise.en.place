@@ -4,7 +4,4 @@
   sudo: yes
 
   roles:
-    - puppet
-    - common
-      #- chef-client
     - stuff

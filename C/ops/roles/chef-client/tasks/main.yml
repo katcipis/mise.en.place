@@ -1,6 +1,0 @@
----
-- name: Stopping and disabling chef client
-  service: name=chef-client state=stopped enabled=no
-  sudo: yes
-  tags:
-    - chef-client
