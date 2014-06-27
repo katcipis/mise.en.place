@@ -1,0 +1,3 @@
+---
+my_vim_dir: "/tmp/my.vim"
+my_vim_repo: "https://github.com/katcipis/my.vim.git"

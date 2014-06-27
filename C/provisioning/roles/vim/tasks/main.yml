@@ -7,3 +7,11 @@
   sudo: yes
   tags:
     - vim
+
+- git: repo={{ my_vim_repo }}
+       dest={{ my_vim_dir }}
+
+- name: Install my.vim
+  command: make install-plugins
+  args:
+    chdir: "{{ my_vim_dir }}"
