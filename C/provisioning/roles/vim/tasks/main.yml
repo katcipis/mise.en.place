@@ -5,13 +5,14 @@
     - vim
     - exuberant-ctags
   sudo: yes
-  tags:
-    - vim
 
-- git: repo={{ my_vim_repo }}
+- name: Checkout my.vim
+  git: repo={{ my_vim_repo }}
        dest={{ my_vim_dir }}
+  sudo: no
 
 - name: Install my.vim
   command: make install-plugins
   args:
     chdir: "{{ my_vim_dir }}"
+  sudo: no

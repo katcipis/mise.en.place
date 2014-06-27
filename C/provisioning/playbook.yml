@@ -5,5 +5,5 @@
 
   roles:
     - ctools
-    - vim
     - git
+    - vim
