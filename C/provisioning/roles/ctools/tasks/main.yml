@@ -6,8 +6,6 @@
     - autogen
     - autoconf
     - build-essential
-    - vim
-    - exuberant-ctags
   sudo: yes
   tags:
     - ctools
