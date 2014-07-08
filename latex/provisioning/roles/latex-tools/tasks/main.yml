@@ -1,0 +1,12 @@
+---
+- name: Install latex tools
+  apt: pkg={{ item }}
+  with_items:
+    - texlive-xetex
+    - texlive-fonts-recommended
+    - latex-xcolor
+    - texlive-math-extra
+    - texlive-latex-extra
+    - biber
+    - fonts-lmodern
+  sudo: yes
