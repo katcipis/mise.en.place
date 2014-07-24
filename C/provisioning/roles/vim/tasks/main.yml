@@ -12,7 +12,7 @@
   sudo: no
 
 - name: Install my.vim
-  command: make install-plugins
+  command: make install
   args:
     chdir: "{{ my_vim_dir }}"
   sudo: no
