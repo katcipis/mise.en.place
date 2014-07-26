@@ -2,17 +2,11 @@
 - name: Install vim
   apt: pkg={{ item }}
   with_items:
-    - vim
+    - vim-*
     - exuberant-ctags
-  sudo: yes
 
-- name: Checkout my.vim
-  git: repo={{ my_vim_repo }}
-       dest={{ my_vim_dir }}
-  sudo: no
+- name: Copying vimrc
+  synchronize: src=~/.vimrc dest=/home/vagrant/.vimrc
 
-- name: Install my.vim
-  command: make install
-  args:
-    chdir: "{{ my_vim_dir }}"
-  sudo: no
+- name: Copying vim plugins
+  synchronize: src=~/.vim dest=/home/vagrant recursive=yes
