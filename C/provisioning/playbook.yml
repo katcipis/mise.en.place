@@ -4,6 +4,6 @@
   sudo: yes
 
   roles:
-    - ctools
-    - git
-    - vim
+    - katcipis.workbench.ctools
+    - katcipis.workbench.git
+    - katcipis.workbench.vim
