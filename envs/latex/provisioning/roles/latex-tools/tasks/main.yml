@@ -9,4 +9,6 @@
     - texlive-latex-extra
     - biber
     - fonts-lmodern
-  sudo: yes
+
+- name: Install evince to visualize pdf
+  apt: pkg=evince

@@ -1,7 +1,6 @@
 ---
 - name: Install git
   apt: pkg=git
-  sudo: yes
 
 - name: Set git user.name to {{ git_user_name }}
   command: git config --global user.name {{ git_user_name }}
