@@ -12,6 +12,7 @@
     - gtk-doc-tools
     - libglib2.0-dev
     - build-essential
+    - indent
   sudo: yes
   tags:
     - ctools
