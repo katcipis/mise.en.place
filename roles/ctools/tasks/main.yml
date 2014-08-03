@@ -10,6 +10,7 @@
     - bison
     - flex
     - gtk-doc-tools
+    - libglib2.0-dev
     - build-essential
   sudo: yes
   tags:
