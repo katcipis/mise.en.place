@@ -5,6 +5,11 @@
     - pkg-config
     - autogen
     - autoconf
+    - autopoint
+    - libtool
+    - bison
+    - flex
+    - gtk-doc-tools
     - build-essential
   sudo: yes
   tags:
