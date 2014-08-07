@@ -1,0 +1,10 @@
+---
+- name: Install zsh
+  apt: pkg=zsh state=latest
+  tags:
+    - zsh
+
+- name: Setting zsh as default shell
+  command: chsh -s /bin/zsh vagrant
+  tags:
+    - zsh
