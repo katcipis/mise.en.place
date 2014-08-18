@@ -1,0 +1,10 @@
+---
+- hosts: all
+  user: vagrant
+  sudo: yes
+
+  roles:
+    - katcipis.workbench.jstools
+    - katcipis.workbench.git
+    - katcipis.workbench.vim
+    - katcipis.workbench.zsh

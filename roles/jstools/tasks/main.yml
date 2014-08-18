@@ -1,0 +1,20 @@
+---
+- name: Installing NodeJS
+  apt: pkg={{ item }}
+  with_items:
+    - nodejs
+    - nodejs-legacy
+    - npm
+  sudo: yes
+  tags:
+    - nodejs
+
+
+- name: Installing NodeJS global modules
+  npm: name={{ item }} global=yes
+  with_items:
+    - istanbul
+    - mocha
+  sudo: yes
+  tags:
+    - npm modules
