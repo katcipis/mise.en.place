@@ -1,6 +1,6 @@
 ---
 - name: Installing NodeJS
-  apt: pkg={{ item }}
+  apt: pkg={{ item }} state=latest
   with_items:
     - nodejs
     - nodejs-legacy
