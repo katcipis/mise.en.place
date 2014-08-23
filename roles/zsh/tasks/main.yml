@@ -8,3 +8,6 @@
   command: chsh -s /bin/zsh vagrant
   tags:
     - zsh
+
+- name: Copying 
+  synchronize: src=~/.zshrc dest=/home/vagrant/.zshrc
