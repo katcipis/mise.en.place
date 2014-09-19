@@ -1,13 +1,12 @@
 ---
 - name: Install zsh
   apt: pkg=zsh state=latest
-  tags:
-    - zsh
 
 - name: Setting zsh as default shell
   command: chsh -s /bin/zsh vagrant
-  tags:
-    - zsh
 
-- name: Copying 
+- name: Copying zshrc
   synchronize: src=~/.zshrc dest=/home/vagrant/.zshrc
+
+- name: Copying zsh dir
+  synchronize: src=~/.zsh dest=/home/vagrant/.zsh
