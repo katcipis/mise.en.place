@@ -4,9 +4,3 @@
   with_items:
     - vim-gnome
     - exuberant-ctags
-
-- name: Copying vimrc
-  synchronize: src=~/.vimrc dest=/home/vagrant/.vimrc
-
-- name: Copying vim plugins
-  synchronize: src=~/.vim dest=/home/vagrant recursive=yes
