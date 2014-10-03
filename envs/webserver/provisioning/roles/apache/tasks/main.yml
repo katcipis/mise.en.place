@@ -1,0 +1,4 @@
+---
+
+- name: Install stuff
+  apt: pkg=apache2
