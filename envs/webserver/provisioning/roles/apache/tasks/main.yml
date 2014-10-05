@@ -2,3 +2,6 @@
 
 - name: Install stuff
   apt: pkg=apache2
+
+- name: Remove the index
+  file: path=/var/www/html/index.html state=absent
