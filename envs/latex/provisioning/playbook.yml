@@ -4,6 +4,8 @@
   sudo: yes
 
   roles:
-      - katcipis.workbench.vim
       - katcipis.workbench.git
+      - katcipis.workbench.vim
+      - katcipis.workbench.zsh
+      - katcipis.workbench.my-stuff
       - latex-tools
