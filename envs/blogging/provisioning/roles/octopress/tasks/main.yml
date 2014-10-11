@@ -1,0 +1,22 @@
+---
+
+- name: Install stuff
+  apt: pkg={{ item }}
+  with_items:
+    - ruby1.9.3
+    - nodejs
+
+- name: Getting octopress
+  git: repo=git://github.com/imathis/octopress.git dest=/home/vagrant/octopress
+  sudo: no
+
+- name: Installing bundler
+  command: gem install bundler chdir=/home/vagrant/octopress
+
+- name: Bundle install on Octopress
+  command: bundle install chdir=/home/vagrant/octopress
+  sudo: no
+
+- name: Install the default Octopress theme
+  command: rake install chdir=/home/vagrant/octopress
+  sudo: no

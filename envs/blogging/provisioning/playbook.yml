@@ -1,0 +1,9 @@
+---
+- hosts: all
+  user: vagrant
+  sudo: yes
+
+  roles:
+      - katcipis.workbench.vim
+      - katcipis.workbench.git
+      - octopress
