@@ -3,4 +3,4 @@
   apt: pkg=zsh state=latest
 
 - name: Setting zsh as default shell
-  command: chsh -s /bin/zsh vagrant
+  command: chsh -s /bin/zsh {{zsh_user}}

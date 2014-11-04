@@ -1,9 +1,10 @@
 ---
 - hosts: all
   sudo: yes
-
+  user: katz
+  vars:
+    zsh_user: katz
   roles:
     - katcipis.workbench.git
     - katcipis.workbench.vim
     - katcipis.workbench.zsh
-    - katcipis.workbench.my-stuff

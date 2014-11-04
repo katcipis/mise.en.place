@@ -1,0 +1,6 @@
+---
+- hosts: all
+  sudo: no
+  user: katz
+  roles:
+    - katcipis.workbench.my-stuff

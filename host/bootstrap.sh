@@ -1,3 +1,3 @@
 #!/bin/sh
 
-ansible-playbook playbook.yml -i inventory --connection=local
+ansible-playbook install.yml -i inventory --connection=local
