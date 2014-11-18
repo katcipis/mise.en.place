@@ -48,6 +48,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
      vb.customize ["modifyvm", :id, "--memory", "512"]
    end
 
-   config.vm.synced_folder "/media/katcipis/videos", "/var/www/html"
+   config.vm.synced_folder "/media/katz/videos", "/var/www/html/videos"
 
 end

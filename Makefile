@@ -1,5 +1,5 @@
 all: install
-	apt-get -y install vagrant ansible
+	apt-get -y install vagrant ansible virtualbox
 	cd host; ./bootstrap.sh
 
 install:
