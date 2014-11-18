@@ -1,7 +1,0 @@
----
-- hosts: all
-  user: vagrant
-  sudo: yes
-
-  roles:
-      - apache
