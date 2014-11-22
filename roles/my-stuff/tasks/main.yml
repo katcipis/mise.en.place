@@ -3,9 +3,9 @@
   sudo: no
   git: repo=https://github.com/katcipis/my.vim.git dest=/tmp/my.vim
 
-#- name: Installing My Vim
-  #sudo: no
-  #command: make install chdir=/tmp/my.vim
+- name: Installing My Vim
+  sudo: no
+  command: make chdir=/tmp/my.vim
 
 - name: Checking out My Fonts
   sudo: no

@@ -1,8 +1,8 @@
-all: install
+all: install-roles
 	apt-get -y install vagrant ansible virtualbox
 	cd host; ./bootstrap.sh
 
-install:
+install-roles:
 	rm -rf /etc/ansible/roles/katcipis.*
 	mkdir -p /etc/ansible/roles
 	cp -pr ./roles/vim /etc/ansible/roles/katcipis.workbench.vim 
