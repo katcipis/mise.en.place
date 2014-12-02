@@ -6,17 +6,13 @@
     - ruby1.9.3
     - nodejs
 
-- name: Getting octopress
-  git: repo=git://github.com/imathis/octopress.git dest=/home/vagrant/octopress
+- name: Getting blog
+  git: repo=git@github.com:katcipis/katcipis.github.io.git dest=/home/vagrant/blog
   sudo: no
 
 - name: Installing bundler
-  command: gem install bundler chdir=/home/vagrant/octopress
+  command: gem install bundler chdir=/home/vagrant/blog
 
 - name: Bundle install on Octopress
-  command: bundle install chdir=/home/vagrant/octopress
-  sudo: no
-
-- name: Install the default Octopress theme
-  command: rake install chdir=/home/vagrant/octopress
+  command: bundle install chdir=/home/vagrant/blog
   sudo: no

@@ -1,5 +1,5 @@
 all: install-roles
-	apt-get -y install vagrant ansible virtualbox gstreamer1.0-* vlc audacious
+	apt-get -y install vagrant ansible virtualbox virtualbox-dkms gstreamer1.0-* vlc audacious
 	cd host; ./bootstrap.sh
 
 install-roles:
