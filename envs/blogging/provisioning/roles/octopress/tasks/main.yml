@@ -13,6 +13,6 @@
 - name: Installing bundler
   command: gem install bundler chdir=/home/vagrant/blog
 
-- name: Bundle install on Octopress
+- name: Bundle install on the blog
   command: bundle install chdir=/home/vagrant/blog
   sudo: no
