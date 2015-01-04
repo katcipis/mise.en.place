@@ -7,8 +7,11 @@
     - nodejs
 
 - name: Getting blog
-  git: repo=git@github.com:katcipis/katcipis.github.io.git dest=/home/vagrant/blog
+  git: repo=https://github.com/katcipis/katcipis.github.io.git dest=/home/vagrant/blog accept_hostkey=true
   sudo: no
+
+- name: Checking out the source branch
+  command: git checkout source chdir=/home/vagrant/blog
 
 - name: Installing bundler
   command: gem install bundler chdir=/home/vagrant/blog
