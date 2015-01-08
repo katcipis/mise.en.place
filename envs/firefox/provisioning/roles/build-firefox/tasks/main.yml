@@ -1,0 +1,12 @@
+---
+- name: Checking out firefox
+  hg: repo=https://hg.mozilla.org/mozilla-central dest=~/mozilla-central
+  tags: build-firefox
+
+- name: Configuring firefox for build
+  copy: src=mozconfig dest=~/mozilla-central
+  tags: build-firefox
+
+- name: Building firefox
+  command: ./mach build chdir=~/mozilla-central
+  tags: build-firefox

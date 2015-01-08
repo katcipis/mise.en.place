@@ -1,0 +1,19 @@
+---
+- name: Installing dependencies to build firefox
+  apt: pkg={{ item }}
+  with_items:
+    - autoconf2.13
+    - zip
+    - libgtk2.0-dev
+    - libdbus-1-dev
+    - libdbus-glib-1-dev
+    - yasm
+    - libasound2-dev
+    - libpulse-dev
+    - libgstreamer0.10-dev
+    - libgstreamer-plugins-base0.10-dev
+    - libxt-dev
+    - mercurial
+  sudo: yes
+  tags:
+    - firefox-build-deps

@@ -1,0 +1,13 @@
+---
+- hosts: all
+  user: vagrant
+  sudo: yes
+
+  roles:
+    - katcipis.workbench.ctools
+    - katcipis.workbench.git
+    - katcipis.workbench.vim
+    - katcipis.workbench.zsh
+    - katcipis.workbench.my-stuff
+    - install-deps
+    - build-firefox
