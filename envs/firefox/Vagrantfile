@@ -45,7 +45,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     v.name = "firefox-dev-env"
     v.memory = 2048
     v.cpus = 2
-    v.customize ["modifyvm", :id, "--ioapic", "on"  ]
+    v.customize ["modifyvm", :id, "--ioapic", "on", "--audio", "oss","--audiocontroller", "ac97" ]
   end
 
   # Share an additional folder to the guest VM. The first argument is
