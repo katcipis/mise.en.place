@@ -11,3 +11,4 @@ install-roles:
 	cp -pr ./roles/ctools /etc/ansible/roles/katcipis.workbench.ctools 
 	cp -pr ./roles/jstools /etc/ansible/roles/katcipis.workbench.jstools
 	cp -pr ./roles/my-stuff /etc/ansible/roles/katcipis.workbench.my-stuff
+	cp -pr ./roles/lang-time-cfg /etc/ansible/roles/katcipis.workbench.lang-time-cfg

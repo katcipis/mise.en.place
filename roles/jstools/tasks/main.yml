@@ -9,12 +9,12 @@
   tags:
     - nodejs
 
-
 - name: Installing NodeJS global modules
   npm: name={{ item }} global=yes
   with_items:
     - istanbul
     - mocha
+    - grunt-cli
   sudo: yes
   tags:
     - npm modules

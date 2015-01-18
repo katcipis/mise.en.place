@@ -1,0 +1,8 @@
+---
+- name: install reveal.js
+  git: repo=https://github.com/hakimel/reveal.js.git dest=/srv/revealjs
+  tags: revealjs
+
+- name: install packages based on package.json
+  npm: path=/srv/revealjs
+  tags: revealjs

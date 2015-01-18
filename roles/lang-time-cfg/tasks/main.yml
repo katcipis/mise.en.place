@@ -1,0 +1,25 @@
+---
+- name: Installing ntp
+  apt: name=ntp state=latest
+  tags: lang-time-cfg
+
+- name: update language
+  apt: pkg=language-pack-en
+  tags: lang-time-cfg
+
+- name: set locale to {{ locale }}
+  command: /usr/sbin/update-locale LANG={{ locale }} LC_ALL={{ locale }}
+  tags: lang-time-cfg
+
+- name: set localtime to {{ timezone }}
+  command: /bin/cp /usr/share/zoneinfo/{{ timezone }} /etc/localtime
+  tags: lang-time-cfg
+
+- name: set timezone to {{ timezone }}
+  template: src=default-timezone.j2 dest=/etc/timezone
+  tags: lang-time-cfg
+
+- name: update tzdata
+  command: /usr/sbin/dpkg-reconfigure --frontend noninteractive tzdata
+  tags: lang-time-cfg
+
