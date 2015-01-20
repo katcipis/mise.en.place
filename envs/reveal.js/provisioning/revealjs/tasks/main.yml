@@ -1,8 +1,10 @@
 ---
-- name: install reveal.js
-  git: repo=https://github.com/hakimel/reveal.js.git dest=~/revealjs
+- name: Install reveal.js
+  git: repo=https://github.com/hakimel/reveal.js.git dest=/home/vagrant/revealjs
+  sudo: no
   tags: revealjs
 
-- name: install packages based on package.json
-  npm: path=~/revealjs
+- name: Install packages based on package.json
+  npm: path=/home/vagrant/revealjs
+  sudo: no
   tags: revealjs
