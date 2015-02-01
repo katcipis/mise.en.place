@@ -8,3 +8,9 @@
   sudo: yes
   tags:
     - golang
+
+- name: Exporting Golang env variables
+  lineinfile: dest=~/.zshrc state=present line={{ item }}
+  with_items:
+    - export GOPATH=$HOME/go
+    - export PATH=$PATH:$GOPATH/bin
