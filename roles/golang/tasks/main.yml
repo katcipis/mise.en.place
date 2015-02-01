@@ -4,6 +4,7 @@
   with_items:
     - golang
     - golang-go.tools
+    - mercurial
   sudo: yes
   tags:
     - golang
