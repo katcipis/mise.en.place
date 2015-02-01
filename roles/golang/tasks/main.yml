@@ -1,0 +1,9 @@
+---
+- name: Installing Golang
+  apt: pkg={{ item }}
+  with_items:
+    - golang
+    - golang-go.tools
+  sudo: yes
+  tags:
+    - golang
