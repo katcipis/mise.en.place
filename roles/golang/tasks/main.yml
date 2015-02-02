@@ -9,8 +9,20 @@
   tags:
     - golang
 
-- name: Exporting Golang env variables
-  lineinfile: dest=~/.zshrc state=present line={{ item }}
-  with_items:
-    - export GOPATH=$HOME/go
-    - export PATH=$PATH:$GOPATH/bin
+- name: Creating workspace dir
+  file: path=~/go state=directory
+  sudo: no
+  tags:
+    - golang
+
+- name: Exporting GOPATH
+  lineinfile: dest=~/.zshrc state=present line="export GOPATH=$HOME/go"
+  sudo: no
+  tags:
+    - golang
+
+- name: Exporting PATH
+  lineinfile: dest=~/.zshrc state=present line="export PATH=$PATH:$GOPATH/bin"
+  sudo: no
+  tags:
+    - golang
