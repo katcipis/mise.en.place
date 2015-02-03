@@ -8,7 +8,7 @@
   tags: setup-blog
 
 - name: Getting blog
-  git: repo=git@github.com:katcipis/katcipis.github.io.git dest=/home/vagrant/blog accept_hostkey=true
+  git: repo=https://github.com/katcipis/katcipis.github.io.git dest=/home/vagrant/blog accept_hostkey=true
   sudo: no
   tags: setup-blog
 
