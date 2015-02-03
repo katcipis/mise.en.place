@@ -6,4 +6,6 @@
   roles:
       - katcipis.workbench.vim
       - katcipis.workbench.git
+      - katcipis.workbench.zsh
+      - katcipis.workbench.my-stuff
       - setup-blog
