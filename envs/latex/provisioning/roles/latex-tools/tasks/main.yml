@@ -12,6 +12,3 @@
 
 - name: Install evince to visualize pdf
   apt: pkg=evince
-
-- name: Install unrar to decompress the fonts
-  apt: pkg=unrar
