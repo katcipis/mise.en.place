@@ -1,4 +1,7 @@
 #!/bin/sh
 
-ansible-playbook install.yml -i inventory --connection=local
-ansible-playbook configure.yml -i inventory --connection=local
+sudo apt-get update
+sudo apt-get upgrade
+
+echo "Installing docker"
+curl -sSL https://get.docker.com/ubuntu/ | sudo sh
