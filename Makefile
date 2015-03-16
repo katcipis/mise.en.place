@@ -1,7 +1,3 @@
-all: install-roles
-	apt-get -y install vagrant ansible virtualbox virtualbox-dkms gstreamer1.0-* vlc audacious
-	cd host; ./bootstrap.sh
-
 install-roles:
 	rm -rf /etc/ansible/roles/katcipis.*
 	mkdir -p /etc/ansible/roles
