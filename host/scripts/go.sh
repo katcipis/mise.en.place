@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo apt-get install golang
+sudo apt-get install -y golang
