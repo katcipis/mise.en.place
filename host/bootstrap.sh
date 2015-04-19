@@ -3,7 +3,8 @@
 sudo apt-get update
 sudo apt-get upgrade
 
-./common.sh
-./vim.sh
-./docker.sh
-./python.sh
+./scripts/common.sh
+./scripts/vim.sh
+./scripts/docker.sh
+./scripts/python.sh
+./scripts/go.sh
