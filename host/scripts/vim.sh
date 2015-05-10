@@ -1,5 +1,4 @@
-echo "Installing vim"
-sudo apt-get install -y vim-gnome build-essential cmake
+echo "Installing my vim"
 git clone git@github.com:katcipis/my.vim.git
 cd my.vim
 make
