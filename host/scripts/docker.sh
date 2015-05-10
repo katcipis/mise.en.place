@@ -11,5 +11,6 @@ sudo apt-get install -y apparmor aufs-tools
 
 sudo service docker restart
 
+echo "Installing docker compose"
 sudo apt-get install -y python-pip
 sudo pip install -U docker-compose
