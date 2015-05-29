@@ -12,5 +12,5 @@ sudo apt-get install -y apparmor aufs-tools
 sudo service docker restart
 
 echo "Installing docker compose"
-sudo apt-get install -y python-pip
-sudo pip install -U docker-compose
+curl -L https://github.com/docker/compose/releases/download/1.2.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+sudo -i chmod +x /usr/local/bin/docker-compose
