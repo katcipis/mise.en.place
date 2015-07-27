@@ -2,10 +2,12 @@
 
 sudo apt-get update
 sudo apt-get -y upgrade
+sudo ./scripts/common.sh
+sudo ./scripts/git.sh
+sudo ./scripts/docker.sh
+sudo ./scripts/python.sh
+sudo ./scripts/go.sh
+sudo ./scripts/spotify.sh
 
-./scripts/common.sh
 ./scripts/vim.sh
-./scripts/docker.sh
-./scripts/python.sh
-./scripts/go.sh
-./scripts/spotify.sh
+./scripts/zsh.sh

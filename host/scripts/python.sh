@@ -1,8 +1,8 @@
 #!/bin/sh
 
 echo "Setting up Python goodness"
-sudo apt-get install -y pylint python-setuptools python-dev
-sudo easy_install -U pip
-sudo pip install --upgrade pyflakes 
-sudo pip install --upgrade pep8 
-sudo pip install --upgrade ipython
+apt-get install -y pylint python-setuptools python-dev
+easy_install -U pip
+pip install --upgrade pyflakes 
+pip install --upgrade pep8 
+pip install --upgrade ipython

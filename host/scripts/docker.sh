@@ -20,7 +20,6 @@ gpasswd -a $USER docker
 echo "Installing stuff that makes docker work properly :-)"
 apt-get install -y apparmor aufs-tools curl
 
-
 service docker restart
 
 echo "Installing docker compose"
