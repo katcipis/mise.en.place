@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 echo "Installing zsh and my zshrc"
 sudo apt-get install -y zsh

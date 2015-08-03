@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 DOCKER_VERSION=1.6.2
 

@@ -8,6 +8,7 @@ sudo ./scripts/docker.sh
 sudo ./scripts/python.sh
 sudo ./scripts/go.sh
 sudo ./scripts/spotify.sh
+sudo ./scripts/vagrant.sh
 
 ./scripts/vim.sh
 ./scripts/zsh.sh
