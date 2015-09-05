@@ -1,8 +1,8 @@
 #!/bin/sh
 set -e
 
-echo "Installing git"
-apt-get install -y git
+echo "Installing essentials"
+sudo pacman --noconfirm -S git openssh sudo
 
 git config --global push.default simple
 git config --global user.name "Tiago Katcipis"
