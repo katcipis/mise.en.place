@@ -2,7 +2,7 @@
 set -e
 
 echo "Installing chromium"
-pacman --noconfirm -S chromium
+sudo pacman --noconfirm -S chromium
 
 echo "Installing flash"
 curl -O https://aur.archlinux.org/cgit/aur.git/snapshot/chromium-pepper-flash.tar.gz
