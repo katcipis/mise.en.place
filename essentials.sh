@@ -10,3 +10,6 @@ git config --global user.email "tiagokatcipis@gmail.com"
 
 echo "Installing Alsa"
 sudo pacman --noconfirm -S alsa-utils alsa-tools
+
+echo "Installing network utils"
+cp network.sh /usr/local/bin
