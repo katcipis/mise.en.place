@@ -33,4 +33,14 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-exec gnome-session
+monitors=`{xrandr | grep -v disconnected | grep connected | wc -l}
+
+if(~ $monitors 1)
+	echo 'no external monitor plugged'
+if not {
+        #TODO
+}
+
+setxkbmap -model abnt2 -layout br
+
+exec rio -term dmenu_run -virtuals 5
