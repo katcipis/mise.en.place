@@ -36,9 +36,9 @@ fi
 monitors=`{xrandr | grep -v disconnected | grep connected | wc -l}
 
 if(~ $monitors 1)
-	echo 'no external monitor plugged'
+    echo 'no external monitor plugged'
 if not {
-        #TODO
+    xrandr --output HDMI1 --auto --above eDP1
 }
 
 setxkbmap -model abnt2 -layout br
