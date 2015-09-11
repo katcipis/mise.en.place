@@ -3,4 +3,8 @@ all:
 	./x.sh
 	./window-managers.sh
 	./browsers.sh
+	./docker.sh
 	./vagrant.sh
+	./vim.sh
+	./zsh.sh
+	./spotify.sh
