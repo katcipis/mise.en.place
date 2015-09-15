@@ -11,5 +11,6 @@ git config --global user.email "tiagokatcipis@gmail.com"
 echo "Installing Alsa"
 sudo pacman --noconfirm -S alsa-utils alsa-tools
 
-echo "Installing network utils"
-cp network.sh /usr/local/bin
+echo "Configure time properly"
+sudo ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
+sudo timedatectl set-ntp true
