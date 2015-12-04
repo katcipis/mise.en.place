@@ -16,4 +16,4 @@ sudo ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 sudo timedatectl set-ntp true
 
 echo "Some utilities"
- sudo pacman --noconfirm -S pkgfile
+sudo pacman --noconfirm -S pkgfile openvpn
