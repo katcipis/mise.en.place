@@ -2,14 +2,14 @@
 set -e
 
 echo "Installing git and other stuff"
-sudo pacman --noconfirm -S git openssh sudo terminator curl dmenu
+sudo pacman --noconfirm -S git openssh sudo terminator curl dmenu openvpn
 
 git config --global push.default simple
 git config --global user.name "Tiago Katcipis"
 git config --global user.email "tiagokatcipis@gmail.com"
 
 echo "Installing Sound Stuff"
-sudo pacman --noconfirm -S alsa-utils alsa-tools pulseaudio
+sudo pacman --noconfirm -S alsa-utils alsa-tools pulseaudio pavucontrol
 
 echo "Configure time properly"
 sudo ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime

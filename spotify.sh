@@ -9,6 +9,12 @@ cd libgcrypt15
 makepkg -sri
 cd -
 
+rm -rf libcurl-compat
+git clone https://aur.archlinux.org/libcurl-compat.git
+cd libcurl-compat
+makepkg -sri
+cd -
+
 rm -rf spotify
 git clone https://aur.archlinux.org/spotify.git
 cd spotify
