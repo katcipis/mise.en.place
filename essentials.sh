@@ -2,7 +2,7 @@
 set -e
 
 echo "Installing git and other stuff"
-sudo pacman --noconfirm -S git openssh sudo xterm
+sudo pacman --noconfirm -S git openssh sudo terminator
 
 git config --global push.default simple
 git config --global user.name "Tiago Katcipis"
