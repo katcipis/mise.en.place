@@ -8,3 +8,6 @@ all:
 	./vim.sh
 	./zsh.sh
 	./spotify.sh
+
+shell:
+	docker run -ti -v `pwd`:/workbench base/archlinux bash
