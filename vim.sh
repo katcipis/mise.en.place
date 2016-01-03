@@ -15,7 +15,7 @@ sudo make install
 sudo ln -s  /usr/local/bin/vim /usr/bin/vi
 
 echo "Installing my vim"
-git clone git@github.com:katcipis/my.vim.git
+git clone https://github.com/katcipis/my.vim.git
 cd my.vim
 make bootstrap
 make
