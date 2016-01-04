@@ -15,6 +15,9 @@ echo "Configure time properly"
 sudo ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 sudo timedatectl set-ntp true
 
+echo "Configure keyboard layout"
+sudo localectl set-keymap br-abnt2
+
 echo "VPN Support"
 sudo pacman --noconfirm -S pkgfile openvpn
 
