@@ -17,5 +17,4 @@ cd -
 rm -rf my.vim
 git clone https://github.com/katcipis/my.vim.git
 cd my.vim
-make bootstrap
 make
