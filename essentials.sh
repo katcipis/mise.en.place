@@ -2,7 +2,7 @@
 set -e
 
 echo "Installing git and other stuff"
-sudo pacman --noconfirm -S git openssh sudo terminator curl dmenu openvpn icedtea-web cmake
+sudo pacman --noconfirm -S git openssh sudo terminator curl dmenu openvpn icedtea-web cmake xclip
 
 git config --global push.default simple
 git config --global user.name "Tiago Katcipis"
