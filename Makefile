@@ -1,13 +1,22 @@
-all:
-	./essentials.sh
-	./x.sh
-	./window-managers.sh
-	./browsers.sh
-	./docker.sh
-	./vagrant.sh
-	./vim.sh
-	./zsh.sh
-	./spotify.sh
+system:
+	./scripts/essentials.sh
+	./scripts/x.sh
+	./scripts/window-managers.sh
+	./scripts/browsers.sh
+	./scripts/docker.sh
+	./scripts/vagrant.sh
+	./scripts/vim.sh
+	./scripts/zsh.sh
+	./scripts/spotify.sh
+
+guard-%:
+	@ if [ "${${*}}" = "" ]; then \
+                echo "Variable '$*' not set"; \
+                exit 1; \
+        fi
+
+i3cfg: guard-user
+	./scripts/i3-cfg.sh
 
 shell:
 	docker run -ti -v `pwd`:/workbench base/archlinux bash
