@@ -9,7 +9,7 @@ git config --global user.name "Tiago Katcipis"
 git config --global user.email "tiagokatcipis@gmail.com"
 
 echo "Installing Sound Stuff"
-sudo pacman --noconfirm -S alsa-utils alsa-tools pulseaudio pavucontrol
+sudo pacman --noconfirm -S alsa-utils alsa-tools pulseaudio pavucontrol audacious
 
 echo "Configure time properly"
 sudo ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
