@@ -16,7 +16,7 @@ guard-%:
         fi
 
 i3cfg: guard-user
-	./scripts/i3-cfg.sh
+	./scripts/i3-cfg.sh $(user)
 
 shell:
 	docker run -ti -v `pwd`:/workbench base/archlinux bash
