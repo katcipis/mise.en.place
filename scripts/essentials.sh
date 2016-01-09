@@ -13,3 +13,6 @@ sudo apt-get install -y audacious
 
 echo "Golang Support"
 sudo apt-get install -y golang-go
+
+echo "Chromium"
+sudo apt-get install -y chromium-browser
