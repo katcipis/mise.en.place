@@ -19,6 +19,3 @@ sudo apt-get install -y audacious vlc
 
 echo "Golang Support"
 sudo apt-get install -y golang-go
-
-echo "Chromium"
-sudo apt-get install -y chromium-browser
