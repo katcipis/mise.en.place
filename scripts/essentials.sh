@@ -1,6 +1,12 @@
 #!/bin/sh
 set -e
 
+echo "Install apt-file"
+sudo add-apt-repository universe
+sudo apt-get update
+sudo apt-get install -y apt-file
+apt-file update
+
 echo "Installing git and other stuff"
 sudo apt-get install -y openssh-server curl openvpn cmake xclip icedtea-plugin git
 

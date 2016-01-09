@@ -1,13 +1,11 @@
 system:
 	./scripts/essentials.sh
-	./scripts/x.sh
-	./scripts/window-managers.sh
-	./scripts/browsers.sh
 	./scripts/docker.sh
-	./scripts/vagrant.sh
 	./scripts/vim.sh
 	./scripts/zsh.sh
 	./scripts/spotify.sh
+	./scripts/i3.sh
+	./scripts/i3-cfg.sh
 
 guard-%:
 	@ if [ "${${*}}" = "" ]; then \
@@ -17,6 +15,3 @@ guard-%:
 
 i3cfg: guard-user
 	./scripts/i3-cfg.sh $(user)
-
-shell:
-	docker run -ti -v `pwd`:/workbench base/archlinux bash
