@@ -1,21 +1,14 @@
 #!/bin/sh
 set -e
 
-cd /tmp
+# 1. Add the Spotify repository signing key to be able to verify downloaded packages
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
 
-rm -rf libgcrypt15
-git clone https://aur.archlinux.org/libgcrypt15.git
-cd libgcrypt15
-makepkg -sri
-cd -
+# 2. Add the Spotify repository
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 
-rm -rf libcurl-compat
-git clone https://aur.archlinux.org/libcurl-compat.git
-cd libcurl-compat
-makepkg -sri
-cd -
+# 3. Update list of available packages
+sudo apt-get update
 
-rm -rf spotify
-git clone https://aur.archlinux.org/spotify.git
-cd spotify
-makepkg -sri
+# 4. Install Spotify
+sudo apt-get install -y spotify-client
