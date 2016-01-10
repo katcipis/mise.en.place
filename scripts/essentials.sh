@@ -5,7 +5,7 @@ echo "Install apt-file"
 sudo add-apt-repository universe
 sudo apt-get update
 sudo apt-get install -y apt-file
-apt-file update
+sudo apt-file update
 
 echo "Installing git and other stuff"
 sudo apt-get install -y openssh-server curl openvpn cmake xclip icedtea-plugin git
@@ -15,7 +15,7 @@ git config --global user.name "Tiago Katcipis"
 git config --global user.email "tiagokatcipis@gmail.com"
 
 echo "Installing Media Stuff"
-sudo apt-get install -y audacious vlc
+sudo apt-get install -y audacious vlc pavucontrol
 
 echo "Golang Support"
 sudo apt-get install -y golang-go
