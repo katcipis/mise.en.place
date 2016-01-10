@@ -1,30 +1,21 @@
 #!/bin/sh
 set -e
 
+echo "Install apt-file"
+sudo add-apt-repository universe
+sudo apt-get update
+sudo apt-get install -y apt-file
+sudo apt-file update
+
 echo "Installing git and other stuff"
-sudo pacman --noconfirm -S git openssh sudo terminator curl dmenu openvpn icedtea-web cmake xclip
+sudo apt-get install -y openssh-server curl openvpn cmake xclip icedtea-plugin git
 
 git config --global push.default simple
 git config --global user.name "Tiago Katcipis"
 git config --global user.email "tiagokatcipis@gmail.com"
 
-echo "Installing Sound Stuff"
-sudo pacman --noconfirm -S alsa-utils alsa-tools pulseaudio pavucontrol audacious
-
-echo "Configure time properly"
-sudo ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
-sudo timedatectl set-ntp true
-
-echo "Configure keyboard layout"
-sudo localectl set-keymap br-abnt2
-
-echo "VPN Support"
-sudo pacman --noconfirm -S pkgfile openvpn
+echo "Installing Media Stuff"
+sudo apt-get install -y audacious vlc pavucontrol
 
 echo "Golang Support"
-sudo pacman -S go
-
-echo "Locale support"
-echo "en_US.UTF-8 UTF-8" | sudo tee -a /etc/locale.gen
-sudo locale-gen
-sudo localectl set-locale LANG=en_US.UTF-8
+sudo apt-get install -y golang-go

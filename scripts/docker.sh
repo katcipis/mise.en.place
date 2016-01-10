@@ -3,13 +3,10 @@
 set -e
 
 echo "Installing docker"
-sudo pacman -S docker
+#TODO
 
 echo "Adding user to docker group"
 sudo gpasswd -a $USER docker
-
-echo "Enabling docker"
-sudo systemctl enable docker
 
 echo "Installing docker compose"
 DOCKER_COMPOSE_VERSION=1.4.0
