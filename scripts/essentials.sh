@@ -8,7 +8,7 @@ sudo apt-get install -y apt-file
 sudo apt-file update
 
 echo "Installing git and other stuff"
-sudo apt-get install -y openssh-server curl openvpn cmake xclip icedtea-plugin git
+sudo apt-get install -y openssh-server curl openvpn cmake xclip icedtea-plugin git unrar
 sudo systemctl disable openvpn.service
 
 git config --global push.default simple
