@@ -1,6 +1,5 @@
 system:
 	./scripts/essentials.sh
-	./scripts/docker.sh
 	./scripts/vim.sh
 	./scripts/zsh.sh
 	./scripts/spotify.sh

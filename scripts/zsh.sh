@@ -2,7 +2,7 @@
 set -e
 
 echo "Installing zsh and my zshrc"
-sudo apt-get install zsh
+sudo apt-get install -y zsh
 cd /tmp
 git clone https://github.com/katcipis/my.zsh.git
 git clone https://github.com/katcipis/my.fonts.git
