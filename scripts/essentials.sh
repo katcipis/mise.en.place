@@ -8,8 +8,8 @@ sudo apt-get install -y apt-file
 sudo apt-file update
 
 echo "Installing git and other stuff"
-sudo apt-get install -y openssh-server curl openvpn cmake xclip git unrar org-mode
-sudo systemctl disable openvpn.service
+sudo apt-get install -y openssh-server curl openvpn cmake xclip git unrar
+# sudo systemctl disable openvpn.service
 
 git config --global push.default simple
 git config --global user.name "Tiago Katcipis"
