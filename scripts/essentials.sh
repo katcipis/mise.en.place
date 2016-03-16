@@ -18,9 +18,6 @@ git config --global user.email "tiagokatcipis@gmail.com"
 echo "Installing Media Stuff"
 sudo apt-get install -y audacious vlc pavucontrol
 
-echo "Golang Support"
-sudo apt-get install -y golang-go
-
 echo "Install Sysdig"
 curl -s https://s3.amazonaws.com/download.draios.com/stable/install-sysdig | sudo bash
 
