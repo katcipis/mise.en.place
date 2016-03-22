@@ -20,7 +20,3 @@ sudo apt-get install -y audacious vlc pavucontrol
 
 echo "Install Sysdig"
 curl -s https://s3.amazonaws.com/download.draios.com/stable/install-sysdig | sudo bash
-
-echo "Install konsole"
-sudo apt-get install -y konsole
-sudo update-alternatives --set x-terminal-emulator /usr/bin/konsole
