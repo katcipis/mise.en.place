@@ -12,7 +12,7 @@ echo "Enabling docker"
 sudo systemctl enable docker
 
 echo "Installing docker compose"
-DOCKER_COMPOSE_VERSION=1.4.0
+DOCKER_COMPOSE_VERSION=1.5.0
 sudo sh -c "curl -L https://github.com/docker/compose/releases/download/$DOCKER_COMPOSE_VERSION/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose"
 sudo chmod +x /usr/local/bin/docker-compose
 

@@ -2,4 +2,4 @@
 
 My development environments :-)
 
-Since the roles are too specific and crappy for ansible galaxy just run *make install* and it will copy all roles to ansible roles directory.
+Just run **make** and your archlinux should be setup just like mine, which is a crap :D.
