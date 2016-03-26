@@ -146,3 +146,14 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# Keyboard config
+exec --no-startup-id  "setxkbmap -v br -variant abnt2"
+
+# Fix dual monitor mess
+workspace 1 output DVI-0
+workspace 2 output DVI-0
+
+# Startup applications
+exec google-chrome-stable
+exec gnome-terminal
