@@ -6,6 +6,7 @@ system:
 	./scripts/docker.sh
 	./scripts/vagrant.sh
 	./scripts/zsh.sh
+	./scripts/fonts.sh
 	./scripts/color-themes.sh
 	./scripts/vim.sh
 	./scripts/spotify.sh
