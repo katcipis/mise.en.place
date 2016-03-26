@@ -28,3 +28,6 @@ echo "Locale support"
 echo "en_US.UTF-8 UTF-8" | sudo tee -a /etc/locale.gen
 sudo locale-gen
 sudo localectl set-locale LANG=en_US.UTF-8
+
+echo "Install Sysdig"
+curl -s https://s3.amazonaws.com/download.draios.com/stable/install-sysdig | sudo bash
