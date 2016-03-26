@@ -9,14 +9,8 @@ system:
 	./scripts/zsh.sh
 	./scripts/spotify.sh
 
-guard-%:
-	@ if [ "${${*}}" = "" ]; then \
-                echo "Variable '$*' not set"; \
-                exit 1; \
-        fi
-
-i3cfg: guard-user
-	./scripts/i3-cfg.sh $(user)
+i3cfg: 
+	./scripts/i3-cfg.sh 
 
 shell:
 	docker build -t archworkbench .
