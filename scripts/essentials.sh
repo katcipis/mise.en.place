@@ -19,15 +19,12 @@ echo "VPN Support"
 sudo pacman --noconfirm -S pkgfile openvpn
 
 echo "Golang Support"
-sudo pacman -S go
+sudo pacman --noconfirm -S go
 
 echo "Locale support"
 echo "en_US.UTF-8 UTF-8" | sudo tee -a /etc/locale.gen
 sudo locale-gen
 sudo localectl set-locale LANG=en_US.UTF-8
-
-echo "Install Sysdig"
-curl -s https://s3.amazonaws.com/download.draios.com/stable/install-sysdig | sudo bash
 
 echo "Installing Sound Stuff"
 sudo pacman --noconfirm -S alsa-utils alsa-tools pulseaudio pavucontrol

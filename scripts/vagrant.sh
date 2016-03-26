@@ -2,6 +2,6 @@
 set -e 
 
 echo "Installing Vagrant"
-sudo pacman -S virtualbox virtualbox-host-dkms net-tools
+sudo pacman --noconfirm -S virtualbox virtualbox-host-dkms net-tools
 sudo usermod -a -G vboxusers $USER
-sudo pacman -S vagrant
+sudo pacman --noconfirm -S vagrant

@@ -20,4 +20,4 @@ i3cfg: guard-user
 
 shell:
 	docker build -t archworkbench .
-	docker run -ti -v `pwd`:/workbench archworkbench bash
+	docker run --rm -ti -v `pwd`:/workbench archworkbench bash
