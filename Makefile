@@ -5,8 +5,9 @@ system:
 	./scripts/browsers.sh
 	./scripts/docker.sh
 	./scripts/vagrant.sh
-	./scripts/vim.sh
 	./scripts/zsh.sh
+	./scripts/color-themes.sh
+	./scripts/vim.sh
 	./scripts/spotify.sh
 
 i3cfg: 
