@@ -153,3 +153,4 @@ exec --no-startup-id  "setxkbmap -v br -variant abnt2"
 # Startup applications
 exec chromium
 exec gnome-terminal
+exec spotify
