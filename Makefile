@@ -2,6 +2,7 @@ system:
 	./scripts/essentials.sh
 	./scripts/x.sh
 	./scripts/window-managers.sh
+	./scripts/i3-cfg.sh 
 	./scripts/browsers.sh
 	./scripts/docker.sh
 	./scripts/vagrant.sh
@@ -10,9 +11,6 @@ system:
 	./scripts/color-themes.sh
 	./scripts/vim.sh
 	./scripts/spotify.sh
-
-i3cfg: 
-	./scripts/i3-cfg.sh 
 
 shell:
 	docker build -t archworkbench .
