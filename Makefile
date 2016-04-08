@@ -7,7 +7,6 @@ system:
 	./scripts/docker.sh
 	./scripts/vagrant.sh
 	./scripts/zsh.sh
-	./scripts/golang.sh
 	./scripts/fonts.sh
 	./scripts/color-themes.sh
 	./scripts/vim.sh
