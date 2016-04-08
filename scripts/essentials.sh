@@ -1,6 +1,5 @@
 #!/bin/sh
-set -o errexit
-set -o nounset
+set -e
 
 echo "Installing git and other basic stuff"
 sudo pacman --noconfirm -S git tig openssh sudo gnome-terminal curl dmenu cmake xclip unrar slock numlockx
@@ -26,6 +25,3 @@ sudo localectl set-locale LANG=en_US.UTF-8
 
 echo "Installing Sound Stuff"
 sudo pacman --noconfirm -S alsa-utils alsa-tools pulseaudio pavucontrol
-
-echo "Install Go"
-sudo pacman --noconfirm -S go
