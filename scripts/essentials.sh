@@ -18,9 +18,6 @@ sudo localectl set-keymap br-abnt2
 echo "VPN Support"
 sudo pacman --noconfirm -S pkgfile openvpn
 
-echo "Golang Support"
-sudo pacman --noconfirm -S go
-
 echo "Locale support"
 echo "en_US.UTF-8 UTF-8" | sudo tee -a /etc/locale.gen
 sudo locale-gen
