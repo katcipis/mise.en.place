@@ -2,7 +2,7 @@
 set -e
 
 echo "Installing git and other basic stuff"
-sudo pacman --noconfirm -S git tig openssh sudo gnome-terminal curl dmenu cmake xclip unrar slock numlockx wget dnsutils
+sudo pacman --noconfirm -S git tig openssh sudo gnome-terminal curl dmenu cmake xclip unrar slock numlockx wget dnsutils linux-headers
 
 git config --global push.default simple
 git config --global user.name "Tiago Katcipis"
