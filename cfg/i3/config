@@ -154,3 +154,8 @@ exec --no-startup-id  "setxkbmap -v br -variant abnt2"
 exec chromium
 exec gnome-terminal
 exec spotify
+exec pavucontrol
+
+run_watch VPN {
+       pidfile = "/var/run/openvpn*.pid"
+}
