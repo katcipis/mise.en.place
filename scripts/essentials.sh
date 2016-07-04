@@ -25,3 +25,6 @@ sudo localectl set-locale LANG=en_US.UTF-8
 
 echo "Installing Sound Stuff"
 sudo pacman --noconfirm -S alsa-utils alsa-tools pulseaudio pavucontrol
+
+echo "Installing image/diagrams tools"
+sudo pacman --noconfirm -S imagemagick dia
