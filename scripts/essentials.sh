@@ -28,3 +28,6 @@ sudo pacman --noconfirm -S alsa-utils alsa-tools pulseaudio pavucontrol
 
 echo "Installing image/diagrams tools"
 sudo pacman --noconfirm -S imagemagick dia
+
+echo "Install Gstreamer"
+sudo pacman --noconfirm -S gstreamer gst-libav gst-plugins-bad  gst-plugins-good gst-plugins-base gst-plugins-ugly
