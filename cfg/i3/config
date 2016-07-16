@@ -155,7 +155,3 @@ exec chromium
 exec gnome-terminal
 exec spotify
 exec pavucontrol
-
-run_watch VPN {
-       pidfile = "/var/run/openvpn*.pid"
-}
