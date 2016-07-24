@@ -12,6 +12,7 @@ system:
 	./scripts/color-themes.sh
 	./scripts/vim.sh
 	./scripts/spotify.sh
+	./scripts/stress.sh
 
 shell:
 	docker build -t archworkbench .
