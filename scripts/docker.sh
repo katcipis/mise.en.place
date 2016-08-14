@@ -8,6 +8,11 @@ sudo pacman --noconfirm -S docker
 echo "Adding user to docker group"
 sudo groupadd -f docker
 sudo gpasswd -a $USER docker
+sudo newgrp docker
+
+echo "Configuring to use OverlayFS"
+mkdir -p /etc/systemd/system/docker.service.d
+printf "[Service]\nExecStart=\nExecStart=/usr/bin/docker daemon -H fd:// --storage-driver=overlay" | sudo tee --append /etc/systemd/system/docker.service.d/storage.conf
 
 echo "Enabling docker"
 sudo systemctl enable docker
