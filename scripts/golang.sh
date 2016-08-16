@@ -2,7 +2,7 @@
 set -o errexit
 set -o nounset
 
-GO_VERSION="1.7rc6"
+GO_VERSION="1.7"
 
 echo "Install Go "$GO_VERSION" at "$GOROOT
 
