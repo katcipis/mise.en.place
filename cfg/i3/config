@@ -151,7 +151,7 @@ bar {
 exec --no-startup-id  "setxkbmap -v br -variant abnt2"
 
 # Startup applications
-exec chromium
+exec google-chrome-stable
 exec gnome-terminal
 exec spotify
 exec pavucontrol
