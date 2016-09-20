@@ -34,3 +34,6 @@ sudo pacman --noconfirm -S gstreamer gst-libav gst-plugins-bad  gst-plugins-good
 
 echo "Install Monitoring tools"
 sudo pacman --noconfirm -S sysdig iotop iftop htop
+
+echo "Install rkt"
+sudo pacman --noconfirm -S rkt acbuild
