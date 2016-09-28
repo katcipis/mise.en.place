@@ -33,7 +33,7 @@ echo "Install Gstreamer"
 sudo pacman --noconfirm -S gstreamer gst-libav gst-plugins-bad  gst-plugins-good gst-plugins-base gst-plugins-ugly
 
 echo "Install Monitoring tools"
-sudo pacman --noconfirm -S sysdig iotop iftop htop
+sudo pacman --noconfirm -S sysdig iotop iftop htop sysstat
 
 echo "Install rkt"
 sudo pacman --noconfirm -S rkt acbuild
