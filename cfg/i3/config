@@ -23,8 +23,6 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -146,6 +144,12 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# Lock screen
+bindsym $mod+l exec i3lock
+
+# start a terminal
+bindsym $mod+Return exec i3-sensible-terminal --working-directory=$(pwd)
 
 # Keyboard config
 exec --no-startup-id  "setxkbmap -v br -variant abnt2"
