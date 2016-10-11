@@ -149,7 +149,7 @@ bar {
 bindsym $mod+l exec i3lock
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal --working-directory=$(xcwd)
+bindsym $mod+Return exec i3-sensible-terminal --command=nash --working-directory=$(xcwd)
 
 # Keyboard config
 exec --no-startup-id  "setxkbmap -v br -variant abnt2"
