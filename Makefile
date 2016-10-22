@@ -14,6 +14,5 @@ system:
 	./scripts/spotify.sh
 	./scripts/stress.sh
 
-shell:
-	docker build -t archworkbench .
-	docker run --rm -ti -v `pwd`:/workbench archworkbench bash
+iso:
+	sudo nash setupiso.nsh
