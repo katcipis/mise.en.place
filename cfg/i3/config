@@ -146,7 +146,7 @@ bar {
 }
 
 # Lock screen
-bindsym $mod+l exec i3lock
+bindsym $mod+l exec slock
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal --command=nash --working-directory=$(xcwd)
