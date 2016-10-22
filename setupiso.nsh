@@ -33,7 +33,7 @@ cp -a $mountdir $workdir
 umount $mountdir
 
 echo "Customizing ISO"
-cd $workdir + "/arch/x86_64"
+chdir($workdir + "/arch/x86_64")
 unsquashfs airootfs.sfs
 
 miseinpace = $workdir + "/arch/x86_64/squashfs-root/mise.in.place"
@@ -50,7 +50,7 @@ rm -r squashfs-root
 md5sum airootfs.sfs > airootfs.md5
 
 echo "Baking new ISO"
-cd $workdir
+chdir($workdir)
 isodescription = "KATCIPIS-ARCH-" + $date
 isofilename = $basedir + "/katcipis-" + $filename
 genisoimage -l -r -J -V $isodescription -b isolinux/isolinux.bin -no-emul-boot -boot-load-size 4 -boot-info-table -c isolinux/boot.cat -o $isofilename ./
