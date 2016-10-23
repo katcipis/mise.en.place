@@ -17,3 +17,4 @@ mkdir -p $GOROOT
 mv ./go/* $GOROOT
 
 go get -u github.com/NeowayLabs/nash/cmd/nash
+ln -s $GOPATH/bin/nash /bin/nash
