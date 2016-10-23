@@ -1,6 +1,8 @@
 IFS = ()
 
-date = "2016.10.01"
+year = "2016"
+month = "10"
+date = $year + "." + $month + ".01"
 filename = "archlinux-" +$date+ "-dual.iso"
 
 -test -f $filename
@@ -50,7 +52,7 @@ md5sum airootfs.sfs > airootfs.md5
 
 echo "Baking new ISO"
 chdir($workdir)
-isodescription = "KATCIPIS-ARCH-" + $date
+isodescription = "ARCH_" + $year + $month
 isofilename = $basedir + "/katcipis-" + $filename
 genisoimage -l -r -J -V $isodescription -b isolinux/isolinux.bin -no-emul-boot -boot-load-size 4 -boot-info-table -c isolinux/boot.cat -o $isofilename ./
 
