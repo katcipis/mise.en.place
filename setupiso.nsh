@@ -52,8 +52,28 @@ md5sum airootfs.sfs > airootfs.md5
 
 echo "Baking new ISO"
 chdir($workdir)
-isodescription = "ARCH_" + $year + $month
+iso_label = "ARCH_" + $year + $month
 isofilename = $basedir + "/katcipis-" + $filename
-genisoimage -l -r -J -V $isodescription -b isolinux/isolinux.bin -no-emul-boot -boot-load-size 4 -boot-info-table -c isolinux/boot.cat -o $isofilename ./
 
-echo "Done"
+chdir($workdir)
+
+result <= (
+    xorriso
+            -as mkisofs
+            -iso-level 3
+            -full-iso9660-filenames
+            -volid $iso_label
+            -eltorito-boot "isolinux/isolinux.bin"
+            -eltorito-catalog "isolinux/boot.cat"
+            -no-emul-boot
+            -boot-load-size 4
+            -boot-info-table
+            -isohybrid-mbr "isolinux/isohdpfx.bin"
+            -eltorito-alt-boot
+            -e "EFI/archiso/efiboot.img"
+            -no-emul-boot
+            -isohybrid-gpt-basdat
+            -output $isofilename $workdir
+)
+
+echo "Done: "
