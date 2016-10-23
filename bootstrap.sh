@@ -2,17 +2,17 @@
 
 set -o errexit
 
-./scripts/essentials.sh
-./scripts/x.sh
-./scripts/window-managers.sh
-./scripts/i3-cfg.sh
-./scripts/terminal.sh
-./scripts/browsers.sh
-./scripts/docker.sh
-./scripts/vagrant.sh
-./scripts/zsh.sh
-./scripts/golang.sh
-./scripts/python.sh
-./scripts/vim.sh
-./scripts/spotify.sh
-./scripts/stress.sh
+hack/essentials.sh
+hack/x.sh
+hack/window-managers.sh
+hack/i3-cfg.sh
+hack/terminal.sh
+hack/browsers.sh
+hack/docker.sh
+hack/vagrant.sh
+hack/zsh.sh
+hack/golang.sh
+hack/python.sh
+hack/vim.sh
+hack/spotify.sh
+hack/stress.sh

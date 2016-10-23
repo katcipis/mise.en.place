@@ -6,4 +6,4 @@ echo "Installing I3"
 sudo pacman --noconfirm -S  i3-wm i3status i3lock
 
 echo "Installing xcwd"
-./scripts/aur.sh xcwd-git
+./hack/aur.sh xcwd-git

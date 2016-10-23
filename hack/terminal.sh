@@ -2,14 +2,12 @@
 
 set -o errexit
 
-version=0.7
-
 echo "Installing cool font"
 #sudo pacman --noconfirm -S ttf-inconsolata
 
-projname=st-$version
+projname=st-master
 projpath=/tmp/st
-filepath=$projpath/st.tar.gz
+filepath=$projpath/st.zip
 
 function cleanup() {
     rm -rf $projname
@@ -20,9 +18,8 @@ cleanup
 
 mkdir -p $projpath
 
-wget http://dl.suckless.org/st/$projname.tar.gz -O $filepath
-tar xvfz $filepath
-cp ./scripts/cfg/st/config.h $projname
+wget https://github.com/katcipis/st/archive/master.zip -O $filepath
+unzip $filepath
 cd $projname
 
 echo "Building st"

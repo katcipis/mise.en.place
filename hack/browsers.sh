@@ -5,4 +5,4 @@ echo "Firefox"
 sudo pacman --noconfirm -S firefox extra/flashplugin
 
 echo "Install Google Chrome"
-./scripts/aur.sh google-chrome
+./hack/aur.sh google-chrome
