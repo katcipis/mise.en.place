@@ -33,4 +33,7 @@ fi
 
 numlockx &
 
+export SHELL="/bin/nash"
+export TERMINAL="st"
+
 exec i3
