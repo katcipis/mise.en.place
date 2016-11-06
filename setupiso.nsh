@@ -42,7 +42,7 @@ miseinpace = $workdir + "/arch/x86_64/squashfs-root/home/mise.in.place"
 
 mkdir -p $miseinpace
 cp -r $basedir + "/bootstrap.sh" $miseinpace
-cp -r $basedir + "/scripts" $miseinpace
+cp -r $basedir + "/hack" $miseinpace
 
 echo "Creating new root FS"
 rm airootfs.sfs
