@@ -2,7 +2,6 @@
 
 set -o errexit
 
-hack/users.sh
 hack/essentials.sh
 hack/x.sh
 hack/window-managers.sh
