@@ -3,7 +3,7 @@ set -e
 
 echo "Installing git and other basic stuff"
 sudo pacman --noconfirm -S git dialtig lsof gnu-netcat openssh sudo curl dmenu
-sudo pacman --noconfirm -S cmake xclip unrar slock numlockx wget dialog
+sudo pacman --noconfirm -S cmake xclip unrar slock numlockx wget
 sudo pacman --noconfirm -S dnsutils linux-headers squashfs-tools cdrkit xorriso
 
 git config --global push.default simple
