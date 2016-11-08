@@ -33,6 +33,9 @@ fi
 
 numlockx &
 
+export GOPATH=$HOME"/workspace/go"
+export GOROOT=$HOME"/go"
+export PATH=$PATH":"$GOPATH"/bin:"$GOROOT"/bin"
 export SHELL="/bin/nash"
 export TERMINAL="st"
 
