@@ -3,7 +3,7 @@
 set -o errexit
 
 echo "Installing cool font"
-#sudo pacman --noconfirm -S ttf-inconsolata
+sudo pacman --noconfirm -S ttf-inconsolata freetype2 pkg-config
 
 projname=st-master
 projpath=/tmp/st
