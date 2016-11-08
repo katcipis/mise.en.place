@@ -16,5 +16,6 @@ rm -rf $GOROOT
 mkdir -p $GOROOT
 mv ./go/* $GOROOT
 
+export PATH=$PATH":"$GOPATH"/bin:"$GOROOT"/bin"
 go get -u github.com/NeowayLabs/nash/cmd/nash
 ln -s $GOPATH/bin/nash /bin/nash
