@@ -8,7 +8,7 @@ sudo pacman --noconfirm -S docker
 echo "Adding user to docker group"
 sudo groupadd -f docker
 sudo gpasswd -a $USER docker
-sudo newgrp docker
+
 
 echo "Configuring to use OverlayFS"
 sudo mkdir -p /etc/systemd/system/docker.service.d
