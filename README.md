@@ -9,4 +9,10 @@ your defenses are deployed.
 —Anthony Bourdain
 ```
 
-Just run **make** and your archlinux should be setup just like mine, which is a crap :D.
+## Install
+
+The pre-bootstrap.sh should be run after you run the base installer
+from archlinux but before your restart the machine and boot only your
+disk install.
+
+After you reboot you can run bootstrap.sh
