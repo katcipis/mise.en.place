@@ -11,8 +11,15 @@ your defenses are deployed.
 
 ## Install
 
-The pre-bootstrap.sh should be run after you run the base installer
+First of all you need to follow the
+[install instructions](https://wiki.archlinux.org/index.php/installation_guide).
+
+DO NOT FORGET to configure locale properly (see the guide) or a lot of odd
+shit WILL happen.
+
+The **pre-bootstrap.sh** should be run after you run the base installer
 from archlinux but before your restart the machine and boot only your
 disk install.
 
-After you reboot you can run bootstrap.sh
+After you reboot you can run **bootstrap.sh** to install all the amazing software
+and configure some stuff like locale.
