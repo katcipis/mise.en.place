@@ -1,7 +1,7 @@
 IFS = ()
 
 year = "2016"
-month = "10"
+month = "12"
 date = $year + "." + $month + ".01"
 filename = "archlinux-" +$date+ "-dual.iso"
 
