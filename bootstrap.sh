@@ -4,6 +4,7 @@ set -o errexit
 
 hack/essentials.sh
 hack/x.sh
+hack/fonts.sh
 hack/window-managers.sh
 hack/i3-cfg.sh
 hack/terminal.sh
