@@ -19,6 +19,7 @@ cleanup
 mkdir -p $projpath
 
 wget https://github.com/katcipis/st/archive/master.zip -O $filepath
+cd $projpath
 unzip $filepath
 cd $projname
 
