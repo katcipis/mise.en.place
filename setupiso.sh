@@ -1,7 +1,7 @@
-IFS = ()
+#!/bin/env nash
 
-year = "2016"
-month = "12"
+year = "2017"
+month = "01"
 date = $year + "." + $month + ".01"
 filename = "archlinux-" +$date+ "-dual.iso"
 
