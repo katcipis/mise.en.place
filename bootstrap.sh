@@ -3,8 +3,8 @@
 set -o errexit
 set -o nounset
 
-GOROOT=$HOME/go
-GOPATH=$HOME/workspace/go
+export GOROOT=$HOME/go
+export GOPATH=$HOME/workspace/go
 export PATH=$PATH":"$GOPATH"/bin:"$GOROOT"/bin"
 
 hack/essentials.sh
