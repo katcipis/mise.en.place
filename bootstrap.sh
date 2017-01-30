@@ -16,7 +16,6 @@ hack/terminal.sh
 hack/browsers.sh
 hack/docker.sh
 hack/vagrant.sh
-hack/zsh.sh
 hack/golang.sh
 hack/nash.sh
 hack/vim.sh
