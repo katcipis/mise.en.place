@@ -22,3 +22,4 @@ hack/vim.sh
 hack/spotify.sh
 hack/stress.sh
 hack/aur.sh mscgen
+hack/aur.sh ctop-bin
