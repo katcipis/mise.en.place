@@ -5,6 +5,9 @@ set -o errexit
 echo "Installing cool font"
 sudo pacman --noconfirm -S ttf-inconsolata freetype2 pkg-config
 
+echo "Installing kitty"
+./hack/aur.sh kitty-git
+
 projname=st-master
 projpath=/tmp/st
 filepath=$projpath/st.zip
