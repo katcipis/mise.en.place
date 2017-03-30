@@ -8,6 +8,9 @@ sudo pacman --noconfirm -S ttf-inconsolata freetype2 pkg-config
 echo "Installing kitty"
 ./hack/aur.sh kitty-git
 
+echo "Configuring kitty"
+./hack/kitty-cfg.sh
+
 projname=st-master
 projpath=/tmp/st
 filepath=$projpath/st.zip
