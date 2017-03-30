@@ -149,7 +149,7 @@ bar {
 bindsym $mod+l exec slock
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal -t katzterm
+bindsym $mod+Return exec kitty
 
 # Keyboard config
 exec --no-startup-id  "setxkbmap -v br -variant abnt2"
