@@ -2,7 +2,7 @@
 set -o errexit
 set -o nounset
 
-go get -u github.com/NeowayLabs/nash/cmd/nash
+go get -u github.com/NeowayLabs/nash/cmd/...
 sudo rm -rf /bin/nash
 sudo ln -s $GOPATH/bin/nash /bin/nash
 
