@@ -1,9 +1,6 @@
 #!/bin/sh
-set -e
-set -u
+set -o errexit
+set -o nounset
 
-echo "Installing I3"
-sudo pacman --noconfirm -S  i3-wm i3status i3lock
-
-echo "Installing xcwd"
-./hack/aur.sh xcwd-git
+echo "Installing taowm"
+go get -u github.com/katcipis/taowm

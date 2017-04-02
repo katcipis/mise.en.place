@@ -40,4 +40,4 @@ export SHELL="/bin/nash"
 export TERMINAL="kitty"
 export TERM="kitty"
 
-exec i3
+exec taowm
