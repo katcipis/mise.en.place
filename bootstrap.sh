@@ -17,7 +17,7 @@ hack/docker.sh
 hack/vagrant.sh
 hack/golang.sh
 hack/window-managers.sh
-hack/nash.sh
+hack/zsh.sh
 hack/vim.sh
 hack/spotify.sh
 hack/stress.sh
