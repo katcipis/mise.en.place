@@ -12,7 +12,7 @@ sudo gpasswd -a $USER docker
 
 echo "Configuring to use OverlayFS"
 sudo mkdir -p /etc/systemd/system/docker.service.d
-printf "[Service]\nExecStart=\nExecStart=/usr/bin/docker daemon -H fd:// --storage-driver=overlay" | sudo tee --append /etc/systemd/system/docker.service.d/storage.conf
+printf "[Service]\nExecStart=\nExecStart=/usr/bin/dockerd -H fd:// --storage-driver=overlay" | sudo tee --append /etc/systemd/system/docker.service.d/storage.conf
 
 echo "Enabling docker"
 sudo systemctl enable docker
