@@ -6,7 +6,7 @@ echo "Installing zsh"
 sudo pacman --noconfirm -S zsh
 
 echo "setting zsh as default shell"
-sudo chsh -s /usr/bin/zsh katcipis
+sudo chsh -s /usr/bin/zsh $USER
 
 WORKDIR=/tmp/zsh
 rm -rf $WORKDIR

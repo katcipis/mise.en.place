@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
 
-groupadd katcipis
-useradd -m -g katcipis -s /bin/bash katcipis
-passwd katcipis
+groupadd katz
+useradd -m -g katz -s /bin/bash katz
+passwd katz

@@ -3,7 +3,7 @@
 year = "2017"
 month = "08"
 date = $year + "." + $month + ".01"
-filename = "archlinux-" +$date+ "-dual.iso"
+filename = "archlinux-" +$date+ "-x86_64.iso"
 
 -test -f $filename
 

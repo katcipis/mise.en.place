@@ -39,3 +39,6 @@ sudo pacman --noconfirm -S sysdig iotop iftop htop sysstat
 
 echo "Install rkt"
 sudo pacman --noconfirm -S rkt acbuild
+
+echo "Install nautilus"
+sudo pacman --noconfirm -S nautilus gvfs-mtp
