@@ -41,4 +41,4 @@ echo "Install rkt"
 sudo pacman --noconfirm -S rkt acbuild
 
 echo "Install nautilus"
-sudo pacman --noconfirm -S nautilus gvfs-mtp
+sudo pacman --noconfirm -S nautilus gvfs-mtp transmission-gtk xdg-utils
