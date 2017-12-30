@@ -2,6 +2,9 @@
 set -o errexit
 set -o nounset
 
+echo "Installing cool font"
+sudo pacman --noconfirm -S ttf-inconsolata freetype2 pkg-config
+
 cd /tmp
 rm -rf image
 git clone https://go.googlesource.com/image
