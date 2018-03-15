@@ -1,7 +1,7 @@
 #!/bin/env nash
 
-year = "2017"
-month = "08"
+year = "2018"
+month = "03"
 date = $year + "." + $month + ".01"
 filename = "archlinux-" +$date+ "-x86_64.iso"
 
