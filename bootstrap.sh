@@ -11,6 +11,7 @@ hack/essentials.sh
 hack/x.sh
 hack/fonts.sh
 hack/golang.sh
+hack/plan9.sh
 hack/window-managers.sh
 hack/terminal.sh
 hack/browsers.sh
