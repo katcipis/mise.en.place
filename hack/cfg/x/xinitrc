@@ -35,9 +35,10 @@ numlockx &
 
 export GOPATH=$HOME"/workspace/go"
 export GOROOT=$HOME"/go"
-export PATH=$PATH":"$GOPATH"/bin:"$GOROOT"/bin"
-export SHELL="/bin/env nash"
-export TERMINAL="kitty"
-export TERM="kitty"
+export PLAN9=/usr/local/plan9
+export PATH=$PATH":"$GOPATH"/bin:"$GOROOT"/bin":$PLAN9"/bin"
+export NASHROOT=$HOME/nashroot
+export NASHPATH=$HOME/nash
+export SHELL=$NASHROOT/bin/nash
 
-exec taowm
+exec rio -term st
