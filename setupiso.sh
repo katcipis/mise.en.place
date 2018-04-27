@@ -1,11 +1,11 @@
 #!/bin/env nash
 
-year = "2018"
-month = "03"
-date = $year + "." + $month + ".01"
-filename = "archlinux-" +$date+ "-x86_64.iso"
+var year = "2018"
+var month = "04"
+var date = $year + "." + $month + ".01"
+var filename = "archlinux-" +$date+ "-x86_64.iso"
 
--test -f $filename
+var _, status <= test -f $filename
 
 if $status != "0" {
     echo "Downloading arch linux ISO"
@@ -15,9 +15,9 @@ if $status != "0" {
 
 echo "Building customized ISO"
 
-basedir <= pwd | xargs echo -n
-workdir = $basedir + "/.isoworkdir"
-mountdir = "/tmp/mnt"
+var basedir <= pwd | xargs echo -n
+var workdir = $basedir + "/.isoworkdir"
+var mountdir = "/tmp/mnt"
 
 echo "Setting up"
 
@@ -27,7 +27,7 @@ mkdir -p $mountdir
 
 echo "Done, starting building ISO"
 
-isopath = $basedir + "/" + $filename
+var isopath = $basedir + "/" + $filename
 echo "ISO file: "$isopath
 
 mount -t iso9660 -o loop $isopath $mountdir
@@ -38,7 +38,7 @@ echo "Customizing ISO"
 chdir($workdir + "/arch/x86_64")
 unsquashfs airootfs.sfs
 
-miseinpace = $workdir + "/arch/x86_64/squashfs-root/home/mise.in.place"
+var miseinpace = $workdir + "/arch/x86_64/squashfs-root/home/mise.in.place"
 
 mkdir -p $miseinpace
 cp $basedir + "/bootstrap.sh" $miseinpace
@@ -54,12 +54,12 @@ md5sum airootfs.sfs > airootfs.md5
 
 echo "Baking new ISO"
 chdir($workdir)
-iso_label = "ARCH_" + $year + $month
-isofilename = $basedir + "/katcipis-" + $filename
+var iso_label = "ARCH_" + $year + $month
+var isofilename = $basedir + "/katcipis-" + $filename
 
 chdir($workdir)
 
-result <= (
+var result <= (
     xorriso
             -as mkisofs
             -iso-level 3
