@@ -4,7 +4,7 @@ set -e
 echo "Installing git and other basic stuff"
 sudo pacman --noconfirm -S git nethogs lsof gnu-netcat openssh sudo curl dmenu fzf
 sudo pacman --noconfirm -S cmake xclip unrar slock numlockx wget fakeroot unzip
-sudo pacman --noconfirm -S dnsutils linux-headers squashfs-tools cdrkit xorriso dosfstools
+sudo pacman --noconfirm -S dnsutils linux-headers squashfs-tools cdrkit xorriso dosfstools ntfs-3g
 
 git config --global push.default simple
 git config --global user.name "Tiago Katcipis"
