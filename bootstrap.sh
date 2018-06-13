@@ -18,8 +18,9 @@ hack/browsers.sh
 hack/kitty-cfg.sh
 hack/docker.sh
 hack/zsh.sh
+hack/nash.zsh
 hack/vim.sh
-hack/spotify.sh
+hack/aur.sh spotify
 hack/stress.sh
 hack/aur.sh mscgen
 hack/aur.sh ctop-bin
