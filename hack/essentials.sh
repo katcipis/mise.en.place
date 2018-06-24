@@ -3,7 +3,7 @@ set -e
 
 echo "Installing git and other basic stuff"
 sudo pacman --noconfirm -S git nethogs lsof gnu-netcat openssh sudo curl dmenu fzf evince
-sudo pacman --noconfirm -S cmake xclip unrar slock numlockx wget fakeroot unzip
+sudo pacman --noconfirm -S cmake xclip unrar slock numlockx wget fakeroot unzip python-pip
 sudo pacman --noconfirm -S dnsutils linux-headers squashfs-tools cdrkit xorriso dosfstools ntfs-3g
 
 git config --global push.default simple
@@ -42,3 +42,7 @@ sudo pacman --noconfirm -S rkt acbuild
 
 echo "Install nautilus"
 sudo pacman --noconfirm -S nautilus gvfs-mtp transmission-gtk xdg-utils
+
+echo "Install subtitles and youtube downloading tools"
+sudo pip install youtube-dl
+sudo pip install subliminal

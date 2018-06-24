@@ -11,7 +11,6 @@ grubdevice=$1
 pacman --noconfirm -S dialog wpa_supplicant sudo dhcpcd vim
 
 ./hack/users.sh
-./hack/grub.sh $grubdevice
 
 echo "done, configure the user to be sudo"
 visudo
