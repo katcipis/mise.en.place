@@ -41,7 +41,7 @@ export NASHROOT=$HOME/nashroot
 export NASHPATH=$HOME/nash
 export SHELL=$NASHROOT/bin/nash
 
-xrandr --output HDMI-1 --left-of DVI-D-1
+xrandr --output HDMI-1 --right-of DP-3
 
 plumber
 exec rio -term st &> $HOME/rio.log
