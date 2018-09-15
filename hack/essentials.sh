@@ -1,6 +1,10 @@
 #!/bin/sh
 set -e
 
+echo "Forcing DNS to be Google, some ISP DNS are pretty crappy"
+sudo cp ./hack/cfg/dns/resolv.conf /etc/resolv.conf
+sudo chattr +i /etc/resolv.conf
+
 echo "Installing git and other basic stuff"
 sudo pacman --noconfirm -S git nethogs lsof gnu-netcat openssh sudo curl dmenu fzf evince
 sudo pacman --noconfirm -S cmake xclip unrar slock numlockx wget fakeroot unzip python-pip
