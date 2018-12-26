@@ -24,4 +24,3 @@ hack/aur.sh spotify
 hack/stress.sh
 hack/aur.sh mscgen
 hack/aur.sh ctop-bin
-hack/aur.sh ii
