@@ -15,7 +15,6 @@ hack/plan9.sh
 hack/window-managers.sh
 hack/terminal.sh
 hack/browsers.sh
-hack/kitty-cfg.sh
 hack/docker.sh
 hack/zsh.sh
 hack/nash.zsh

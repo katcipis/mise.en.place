@@ -1,5 +1,6 @@
 #!/bin/sh
 
+set -o nounset
 set -o errexit
 
 projname=st-master
