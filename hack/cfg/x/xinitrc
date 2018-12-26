@@ -39,10 +39,9 @@ export PLAN9=/usr/local/plan9
 export PATH=$PATH":"$GOPATH"/bin:"$GOROOT"/bin":$PLAN9"/bin"
 export NASHROOT=$HOME/nashroot
 export NASHPATH=$HOME/nash
-export SHELL=$NASHROOT/bin/nash
 
-xrandr --output HDMI-1 --right-of DP-3
-xrandr --output DVI-D-1 --same-as DP-3
 
-plumber
-exec rio -term st &> $HOME/rio.log
+xrandr --output HDMI-1 --off
+xrandr --output DVI-D-1 --right-of DP-3
+
+exec i3
