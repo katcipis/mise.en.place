@@ -157,9 +157,6 @@ bindsym $mod+Return exec st
 workspace 1 output DVI-D-1
 workspace 2 output DP-3
 
+# Startup applications
 exec --no-startup-id i3-msg 'workspace 2; exec google-chrome-stable'
 exec --no-startup-id i3-msg 'workspace 2; exec spotify'
-
-# Startup applications
-# exec google-chrome-stable
-# exec spotify
