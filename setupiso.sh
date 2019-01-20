@@ -41,6 +41,7 @@ unsquashfs airootfs.sfs
 var miseinpace = $workdir + "/arch/x86_64/squashfs-root/home/mise.in.place"
 
 mkdir -p $miseinpace
+cp $basedir + "/Makefile" $miseinpace
 cp $basedir + "/bootstrap.sh" $miseinpace
 cp $basedir + "/pre-bootstrap.sh" $miseinpace
 cp -r $basedir + "/hack" $miseinpace
