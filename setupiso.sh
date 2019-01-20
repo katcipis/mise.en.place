@@ -1,7 +1,7 @@
 #!/bin/env nash
 
-var year = "2018"
-var month = "10"
+var year = "2019"
+var month = "01"
 var date = $year + "." + $month + ".01"
 var filename = "archlinux-" +$date+ "-x86_64.iso"
 
