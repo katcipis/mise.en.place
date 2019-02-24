@@ -41,11 +41,8 @@ sudo pacman --noconfirm -S gstreamer gst-libav gst-plugins-bad  gst-plugins-good
 echo "Install Monitoring tools"
 sudo pacman --noconfirm -S sysdig iotop iftop htop sysstat
 
-echo "Install rkt"
-sudo pacman --noconfirm -S rkt acbuild
-
 echo "Install nautilus"
-sudo pacman --noconfirm -S nautilus gvfs-mtp transmission-gtk xdg-utils
+sudo pacman --noconfirm -S nautilus gvfs-mtp transmission-gtk xdg-utils eog
 
 echo "Install subtitles and youtube downloading tools"
 sudo pip install youtube-dl
