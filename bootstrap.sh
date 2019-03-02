@@ -17,6 +17,7 @@ hack/terminal.sh
 hack/browsers.sh
 hack/docker.sh
 hack/zsh.sh
+hack/nash.sh
 hack/vim.sh
 hack/aur.sh spotify
 hack/stress.sh
