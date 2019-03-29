@@ -1,4 +1,4 @@
-#Mise en place
+# Mise en place
 
 ```
 Mise-en-place is the religion of all good line cooks...
@@ -9,7 +9,7 @@ your defenses are deployed.
 —Anthony Bourdain
 ```
 
-## Install
+# Install
 
 First of all you need to follow the
 [install instructions](https://wiki.archlinux.org/index.php/installation_guide).
