@@ -21,4 +21,4 @@ sudo make install
 cd -
 
 echo "Done, cleaning up"
-cleanup
+rm -rf $projpath
