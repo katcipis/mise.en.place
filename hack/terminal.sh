@@ -7,13 +7,7 @@ projname=st-master
 projpath=/tmp/st
 filepath=$projpath/st.zip
 
-function cleanup() {
-    rm -rf $projname
-    rm -rf $projpath
-}
-
-cleanup
-
+rm -rf $projpath
 mkdir -p $projpath
 
 wget https://github.com/katcipis/st/archive/master.zip -O $filepath
