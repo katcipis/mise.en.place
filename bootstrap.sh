@@ -20,6 +20,6 @@ hack/zsh.sh
 hack/nash.sh
 hack/vim.sh
 hack/aur.sh spotify
-hack/stress.sh
+hack/aur.sh mprime
 hack/aur.sh mscgen
 hack/aur.sh ctop-bin
