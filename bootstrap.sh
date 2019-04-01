@@ -19,6 +19,7 @@ hack/docker.sh
 hack/zsh.sh
 hack/nash.sh
 hack/vim.sh
+hack/dns.sh
 hack/aur.sh spotify
 hack/aur.sh mprime
 hack/aur.sh mscgen
