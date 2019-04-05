@@ -8,6 +8,7 @@ export GOPATH=$HOME/workspace/go
 export PATH=$PATH":"$GOPATH"/bin:"$GOROOT"/bin"
 
 hack/essentials.sh
+hack/ssh.sh
 hack/x.sh
 hack/fonts.sh
 hack/golang.sh
