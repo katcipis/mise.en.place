@@ -2,14 +2,15 @@
 set -o errexit
 set -o nounset
 
-GO_VERSION="1.13"
+version="1.13"
+installdir=$HOME/.local/go
 
-echo "Install Go "$GO_VERSION" at "$GOROOT
+echo "Install Go "$version" at "$installdir
 
 cd /tmp
-wget https://storage.googleapis.com/golang/go$GO_VERSION.linux-amd64.tar.gz
-tar -xvf go$GO_VERSION.linux-amd64.tar.gz
+wget https://storage.googleapis.com/golang/go$version.linux-amd64.tar.gz
+tar -xvf go$version.linux-amd64.tar.gz
 
-rm -rf $GOROOT
-mkdir -p $GOROOT
-mv ./go/* $GOROOT
+rm -rf $installdir
+mkdir -p $installdir
+mv ./go/* $installdir
