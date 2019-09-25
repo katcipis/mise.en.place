@@ -3,6 +3,8 @@
 set -o nounset
 set -o errexit
 
+sudo pacman -S --noconfirm kitty
+
 projname=st-master
 projpath=/tmp/st
 filepath=$projpath/st.zip
