@@ -6,3 +6,6 @@ usb:
 
 wm:
 	./hack/i3-cfg.sh
+
+term:
+	./hack/term-cfg.sh
