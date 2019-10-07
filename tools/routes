@@ -1,4 +1,6 @@
 #!/bin/sh
-set -e
+
+set -o errexit
+set -o nounset
 
 iptables -t nat -L -nv
