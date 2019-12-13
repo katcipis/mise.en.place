@@ -33,7 +33,4 @@ fi
 
 numlockx &
 
-xrandr --output HDMI-1 --off
-xrandr --output DVI-D-1 --right-of DP-3
-
 exec i3
