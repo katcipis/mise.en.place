@@ -6,7 +6,7 @@ set -o nounset
 workdir=$(mktemp -d)
 basedir=$HOME/.local
 installdir=$basedir/google-cloud-sdk
-version="272.0.0"
+version="274.0.0"
 
 cd ${workdir}
 curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-${version}-linux-x86_64.tar.gz
