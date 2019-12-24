@@ -3,4 +3,13 @@
 set -o nounset
 set -o errexit
 
-sudo pacman -S --noconfirm kitty
+workdir=$(mktemp -d)
+origdir=$(pwd)
+
+cd ${workdir}
+git clone git@github.com:katcipis/st.git
+cd st
+make
+sudo make install
+cd ${origdir}
+rm -rf ${workdir}
