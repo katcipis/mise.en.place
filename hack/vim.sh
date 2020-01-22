@@ -2,10 +2,12 @@
 set -o errexit
 set -o nounset
 
-cd /tmp
+workdir=$(mktemp -d)
+cd ${workdir}
+
 echo "Installing my vim"
-rm -rf my.vim
 git clone https://github.com/katcipis/my.vim.git
 cd my.vim
-make bootstrap
 make
+
+rm -rf ${workdir}
