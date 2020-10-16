@@ -7,7 +7,7 @@ workdir=$(mktemp -d)
 origdir=$(pwd)
 
 cd ${workdir}
-git clone git@github.com:katcipis/st.git
+git clone https://github.com/katcipis/st.git
 cd st
 make
 sudo make install
