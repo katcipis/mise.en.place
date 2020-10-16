@@ -2,7 +2,7 @@
 
 set -o errexit
 
-pacman --noconfirm -S dialog wpa_supplicant sudo dhcpcd vim
+pacman --noconfirm -Sy dialog wpa_supplicant sudo dhcpcd vim netctl
 
 ./hack/users.sh
 

@@ -79,4 +79,4 @@ var result <= (
             -output $isofilename $workdir
 )
 
-echo "Done: "
+echo "Done"
