@@ -1,5 +1,5 @@
 iso:
-	sudo ./setupiso.sh
+	sudo ./setupiso
 
 usb:
 	sudo dd bs=4M if=$(iso) of=$(dev) status=progress && sync
