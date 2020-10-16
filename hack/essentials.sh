@@ -3,7 +3,7 @@ set -e
 
 echo "Installing git and other basic stuff"
 sudo pacman --noconfirm -S git nethogs lsof gnu-netcat openssh sudo curl dmenu fzf evince
-sudo pacman --noconfirm -S cmake xclip gvim unrar slock numlockx wget fakeroot unzip python-pip
+sudo pacman --noconfirm -S cmake xclip unrar slock numlockx wget fakeroot unzip python-pip
 sudo pacman --noconfirm -S dnsutils linux-headers squashfs-tools cdrkit xorriso dosfstools ntfs-3g
 
 git config --global push.default simple
