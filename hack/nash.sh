@@ -3,7 +3,7 @@
 export GOPATH=$HOME/workspace/go
 export NASHPATH=$HOME/nash
 
-NASH=$GOPATH"/src/github.com/NeowayLabs/nash"
+NASH=$GOPATH"/src/github.com/madlambda/nash"
 
 echo "installing nash"
 
