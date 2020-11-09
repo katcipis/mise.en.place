@@ -3,5 +3,6 @@
 set -o errexit
 set -o nounset
 
-mkdir -p ${HOME}/.i3
-cp ./hack/cfg/i3/config ${HOME}/.i3/config
+i3cfg="${HOME}/.config/i3"
+mkdir -p ${i3cfg}
+cp ./hack/cfg/i3/config ${i3cfg}/config
