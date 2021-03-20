@@ -3,12 +3,14 @@
 set -o errexit
 set -o nounset
 
-workdir=$(mktemp -d)
 outdir=iso
-profiledir=archlive
+workdir=$(mktemp -d)
+profilebasedir=$(mktemp -d)
+profiledir="${profilebasedir}/releng"
 mise_place_install="${profiledir}/airootfs/etc/skel/mise-en-place"
 
 printf "workdir %s\n" "${workdir}"
+printf "profiledir %s\n" "${profiledir}"
 printf "outdir %s\n" "${outdir}"
 
 cp -r /usr/share/archiso/configs/releng "${profiledir}"
@@ -18,3 +20,6 @@ cp bootstrap "${mise_place_install}"
 cp pre-bootstrap "${mise_place_install}"
 
 mkarchiso -v -w "${workdir}" -o "${outdir}" "${profiledir}"
+
+rm -rf "${workdir}"
+rm -rf "${profilebasedir}"
