@@ -9,6 +9,17 @@ your defenses are deployed.
 —Anthony Bourdain
 ```
 
+# Setup ISO
+
+On an arch linux host just run:
+
+```
+make iso
+```
+
+And it will create a live arch linux image with the mise en place scripts
+inside the home of all users in the built ISO.
+
 # Install
 
 First of all you need to follow the
