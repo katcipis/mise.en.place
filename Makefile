@@ -15,3 +15,6 @@ iso-deps:
 
 iso: iso-deps
 	./buildiso
+
+test:
+	run_archiso -i $(iso)
