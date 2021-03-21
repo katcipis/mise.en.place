@@ -9,3 +9,12 @@ wm:
 
 term:
 	./hack/term-cfg.sh
+
+iso-deps:
+	pacman -S archiso edk2-ovmf qemu
+
+iso: iso-deps
+	./buildiso
+
+test:
+	run_archiso -i $(iso)
