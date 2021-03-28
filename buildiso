@@ -7,6 +7,7 @@ outdir=iso
 workdir=$(mktemp -d)
 profilebasedir=$(mktemp -d)
 profiledir="${profilebasedir}/releng"
+pkgs_path="${profiledir}/packages.x86_64"
 mise_place_install="${profiledir}/airootfs/etc/skel/mise-en-place"
 
 printf "workdir %s\n" "${workdir}"
@@ -14,6 +15,11 @@ printf "profiledir %s\n" "${profiledir}"
 printf "outdir %s\n" "${outdir}"
 
 cp -r /usr/share/archiso/configs/releng "${profiledir}"
+echo "netctl" >> "${pkgs_path}"
+echo "dialog" >> "${pkgs_path}"
+echo "wpa_supplicant" >> "${pkgs_path}"
+echo "dhcpcd" >> "${pkgs_path}"
+
 mkdir -p ${mise_place_install}
 cp -r hack "${mise_place_install}"
 cp bootstrap "${mise_place_install}"
