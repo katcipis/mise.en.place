@@ -16,11 +16,10 @@ hack/plan9.sh
 hack/window-managers.sh
 hack/terminal.sh
 hack/browsers.sh
-hack/podman.sh
+hack/docker.sh
 hack/zsh.sh
-hack/nash.sh
 hack/vim.sh
-hack/aur.sh spotify
 hack/aur.sh mprime
 hack/aur.sh mscgen
 hack/aur.sh ctop-bin
+hack/aur.sh spotify
