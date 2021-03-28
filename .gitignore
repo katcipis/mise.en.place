@@ -1,3 +1,5 @@
 .isoworkdir
 *.iso
 /archlive
+/archprofile
+/.archprofile
