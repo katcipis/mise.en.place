@@ -19,7 +19,7 @@ hack/browsers.sh
 hack/docker.sh
 hack/zsh.sh
 hack/vim.sh
+hack/spotify.sh
 hack/aur.sh mprime
 hack/aur.sh mscgen
 hack/aur.sh ctop-bin
-hack/aur.sh spotify
