@@ -14,12 +14,6 @@ echo "Configure time properly"
 sudo ln -fs /usr/share/zoneinfo/Europe/Rome /etc/localtime
 sudo timedatectl set-ntp true
 
-echo "Configure keyboard layout"
-sudo localectl set-keymap br-abnt2
-
-echo "VPN Support"
-sudo pacman --noconfirm -S pkgfile openvpn
-
 echo "Locale support"
 echo "en_US.UTF-8 UTF-8" | sudo tee -a /etc/locale.gen
 sudo locale-gen
@@ -35,7 +29,7 @@ echo "Install Gstreamer"
 sudo pacman --noconfirm -S gstreamer gst-libav gst-plugins-bad  gst-plugins-good gst-plugins-base gst-plugins-ugly vlc
 
 echo "Install Monitoring tools"
-sudo pacman --noconfirm -S sysdig iotop iftop htop sysstat
+sudo pacman --noconfirm -S iotop iftop htop sysstat bcc-tools
 
 echo "Install nautilus"
 sudo pacman --noconfirm -S nautilus gvfs-mtp transmission-gtk xdg-utils eog
