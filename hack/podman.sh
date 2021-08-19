@@ -1,9 +1,9 @@
 #!/bin/sh
 
-echo "installing and setting up rootless podman"
-
 set -o nounset
 set -o errexit
+
+echo "installing and setting up rootless podman"
 
 sudo pacman --noconfirm -S podman slirp4netns fuse-overlayfs
 
