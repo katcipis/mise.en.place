@@ -25,7 +25,7 @@ cp -r hack "${mise_place_install}"
 cp bootstrap "${mise_place_install}"
 cp pre-bootstrap "${mise_place_install}"
 
-mkarchiso -v -w "${workdir}" -o "${outdir}" "${profiledir}"
+sudo mkarchiso -v -w "${workdir}" -o "${outdir}" "${profiledir}"
 
 rm -rf "${workdir}"
 rm -rf "${profilebasedir}"
