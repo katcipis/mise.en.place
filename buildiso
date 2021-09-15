@@ -27,5 +27,6 @@ cp pre-bootstrap "${mise_place_install}"
 
 sudo mkarchiso -v -w "${workdir}" -o "${outdir}" "${profiledir}"
 
-rm -rf "${workdir}"
-rm -rf "${profilebasedir}"
+# WHY: files created by mkarchiso using sudo x_x
+sudo rm -rf "${workdir}"
+sudo rm -rf "${profilebasedir}"
