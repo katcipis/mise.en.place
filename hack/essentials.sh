@@ -30,6 +30,9 @@ sudo pacman --noconfirm -S iotop iftop htop sysstat bcc-tools
 echo "Install nautilus"
 sudo pacman --noconfirm -S nautilus gvfs-mtp xdg-utils eog
 
+echo "Install telegram"
+sudo pacman --noconfirm -S telegram-desktop
+
 echo "Install subtitles and youtube downloading tools"
 sudo pip install youtube-dl
 sudo pip install subliminal
