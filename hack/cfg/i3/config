@@ -156,4 +156,3 @@ bindsym $mod+Return exec st
 # Startup applications
 exec --no-startup-id i3-msg 'workspace 1; exec google-chrome-stable'
 exec --no-startup-id i3-msg 'workspace 1; exec spotify'
-exec --no-startup-id i3-msg 'workspace 1; exec slack'
