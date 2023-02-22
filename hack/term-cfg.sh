@@ -3,6 +3,6 @@
 set -o errexit
 set -o nounset
 
-kittycfgdir=${HOME}/.config/kitty
-mkdir -p ${kittycfgdir}
-cp ./hack/cfg/term/kitty.conf ${kittycfgdir}
+cfgdir="$HOME/.config/alacritty"
+mkdir -p "${cfgdir}"
+cp ./hack/cfg/alacritty/alacritty.yml "${cfgdir}"
