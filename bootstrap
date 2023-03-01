@@ -15,7 +15,6 @@ hack/fonts.sh
 hack/golang.sh
 hack/plan9.sh
 hack/window-managers.sh
-hack/terminal.sh
 hack/browsers.sh
 hack/podman.sh
 hack/zsh.sh

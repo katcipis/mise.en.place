@@ -36,3 +36,6 @@ sudo pacman --noconfirm -S telegram-desktop
 echo "Install subtitles and youtube downloading tools"
 sudo pip install youtube-dl
 sudo pip install subliminal
+
+echo "Install terminal"
+sudo pacman --noconfirm -S alacritty
