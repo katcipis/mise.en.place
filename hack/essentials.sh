@@ -38,4 +38,5 @@ sudo pip install youtube-dl
 sudo pip install subliminal
 
 echo "Install terminal"
+sudo pacman --noconfirm -S ttf-inconsolata-go-nerd-3.0.1-1 ttf-jetbrains-mono-nerd
 sudo pacman --noconfirm -S alacritty

@@ -124,19 +124,19 @@
 # Font configuration
 font:
   normal:
-    family: Go Mono
+    family: JetBrainsMono Nerd Font
     style: Regular
 
   bold:
-    family: Go Mono
+    family: JetBrainsMono Nerd Font
     style: Bold
 
   italic:
-    family: Go Mono
+    family: JetBrainsMono Nerd Font
     style: Italic
 
   bold_italic:
-    family: Go Mono
+    family: JetBrainsMono Nerd Font
     style: Bold Italic
 
   size: 17.0
