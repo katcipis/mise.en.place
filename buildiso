@@ -8,7 +8,7 @@ workdir=$(mktemp -d)
 profilebasedir=$(mktemp -d)
 profiledir="${profilebasedir}/releng"
 pkgs_path="${profiledir}/packages.x86_64"
-mise_place_install="${profiledir}/airootfs/etc/skel/mise-en-place"
+mise_place_install="${profiledir}/airootfs/root/mise-en-place"
 
 printf "workdir %s\n" "${workdir}"
 printf "profiledir %s\n" "${profiledir}"
