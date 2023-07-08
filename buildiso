@@ -20,7 +20,7 @@ echo "dialog" >> "${pkgs_path}"
 echo "wpa_supplicant" >> "${pkgs_path}"
 echo "dhcpcd" >> "${pkgs_path}"
 
-mkdir -p ${mise_place_install}
+mkdir -p "${mise_place_install}"
 cp -r hack "${mise_place_install}"
 cp bootstrap "${mise_place_install}"
 cp pre-bootstrap "${mise_place_install}"
