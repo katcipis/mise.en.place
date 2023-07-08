@@ -33,9 +33,6 @@ sudo pacman --noconfirm -S nautilus gvfs-mtp xdg-utils eog
 echo "Install telegram"
 sudo pacman --noconfirm -S telegram-desktop
 
-echo "Install subtitles and youtube downloading tools"
-sudo pip install youtube-dl
-
 echo "Install terminal"
-sudo pacman --noconfirm -S ttf-inconsolata-go-nerd-3.0.1-1 ttf-jetbrains-mono-nerd
+sudo pacman --noconfirm -S ttf-inconsolata-go-nerd ttf-jetbrains-mono-nerd
 sudo pacman --noconfirm -S alacritty
