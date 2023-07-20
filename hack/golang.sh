@@ -3,7 +3,7 @@
 set -o errexit
 set -o nounset
 
-version="1.20.2"
+version="1.20.5"
 installdir="${HOME}/.local/go"
 
 echo "Install Go ${version} at ${installdir}"

@@ -8,7 +8,7 @@ workdir=$(mktemp -d)
 profilebasedir=$(mktemp -d)
 profiledir="${profilebasedir}/releng"
 pkgs_path="${profiledir}/packages.x86_64"
-mise_place_install="${profiledir}/airootfs/etc/skel/mise-en-place"
+mise_place_install="${profiledir}/airootfs/root/mise-en-place"
 
 printf "workdir %s\n" "${workdir}"
 printf "profiledir %s\n" "${profiledir}"
@@ -20,7 +20,7 @@ echo "dialog" >> "${pkgs_path}"
 echo "wpa_supplicant" >> "${pkgs_path}"
 echo "dhcpcd" >> "${pkgs_path}"
 
-mkdir -p ${mise_place_install}
+mkdir -p "${mise_place_install}"
 cp -r hack "${mise_place_install}"
 cp bootstrap "${mise_place_install}"
 cp pre-bootstrap "${mise_place_install}"

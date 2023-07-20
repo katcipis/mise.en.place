@@ -3,23 +3,14 @@
 set -o errexit
 set -o nounset
 
-export GOROOT=$HOME/go
-export GOPATH=$HOME/workspace/go
-export PATH=$PATH":"$GOPATH"/bin:"$GOROOT"/bin"
-
 hack/essentials.sh
 hack/git.sh
 hack/ssh.sh
 hack/x.sh
-hack/fonts.sh
 hack/golang.sh
-hack/plan9.sh
 hack/window-managers.sh
 hack/browsers.sh
 hack/podman.sh
 hack/zsh.sh
 hack/vim.sh
 hack/spotify.sh
-hack/aur.sh mprime
-hack/aur.sh mscgen
-hack/aur.sh ctop-bin
