@@ -3,7 +3,7 @@ set -e
 
 echo "Installing essential tools"
 sudo pacman --noconfirm -S nethogs lsof gnu-netcat openssh sudo curl dmenu fzf evince neovim npm
-sudo pacman --noconfirm -S make cmake xclip unrar slock numlockx wget fakeroot unzip python-pip
+sudo pacman --noconfirm -S make cmake xclip unrar slock numlockx wget fakeroot unzip python-pip pkg-config
 sudo pacman --noconfirm -S dnsutils linux-headers squashfs-tools cdrkit xorriso dosfstools ntfs-3g
 
 echo "Configure time properly"
