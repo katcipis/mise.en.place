@@ -5,4 +5,4 @@ set -o nounset
 
 cfgdir="$HOME/.config/alacritty"
 mkdir -p "${cfgdir}"
-cp ./hack/cfg/alacritty/alacritty.yml "${cfgdir}"
+cp ./hack/cfg/alacritty/alacritty.toml "${cfgdir}"

@@ -4,7 +4,7 @@ set -e
 echo "Installing essential tools"
 sudo pacman --noconfirm -S nethogs lsof gnu-netcat openssh sudo curl dmenu fzf evince neovim npm autoconf automake
 sudo pacman --noconfirm -S make cmake xclip unrar slock numlockx wget fakeroot unzip python-pip pkg-config
-sudo pacman --noconfirm -S dnsutils linux-headers squashfs-tools cdrkit xorriso dosfstools ntfs-3g
+sudo pacman --noconfirm -S dnsutils linux-headers squashfs-tools cdrkit xorriso dosfstools ntfs-3g less
 
 echo "Configure time properly"
 sudo ln -fs /usr/share/zoneinfo/Europe/Rome /etc/localtime
