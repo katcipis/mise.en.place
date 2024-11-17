@@ -4,7 +4,7 @@ set -e
 echo "Installing essential tools"
 sudo pacman --noconfirm -S nethogs lsof gnu-netcat openssh sudo curl dmenu fzf evince neovim npm autoconf automake
 sudo pacman --noconfirm -S make cmake xclip unrar slock numlockx wget fakeroot unzip python-pip pkg-config
-sudo pacman --noconfirm -S dnsutils linux-headers squashfs-tools cdrkit xorriso dosfstools ntfs-3g less
+sudo pacman --noconfirm -S dnsutils linux-headers squashfs-tools cdrkit xorriso dosfstools ntfs-3g less debugedit
 
 echo "Configure time properly"
 sudo ln -fs /usr/share/zoneinfo/Europe/Rome /etc/localtime
@@ -29,9 +29,6 @@ sudo pacman --noconfirm -S iotop iftop htop sysstat bcc-tools
 
 echo "Install nautilus"
 sudo pacman --noconfirm -S nautilus gvfs-mtp xdg-utils eog
-
-echo "Install telegram"
-sudo pacman --noconfirm -S telegram-desktop
 
 echo "Install terminal"
 sudo pacman --noconfirm -S ttf-inconsolata-go-nerd ttf-jetbrains-mono-nerd
