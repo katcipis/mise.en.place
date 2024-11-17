@@ -25,6 +25,7 @@ cp -r hack "${mise_place_install}"
 cp bootstrap "${mise_place_install}"
 cp pre-bootstrap "${mise_place_install}"
 
+echo "=== building arch ISO ==="
 sudo mkarchiso -v -w "${workdir}" -o "${outdir}" "${profiledir}"
 
 # WHY: files created by mkarchiso using sudo x_x
