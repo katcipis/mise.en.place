@@ -20,9 +20,7 @@
 
     environment.systemPackages = with pkgs; [
         i3
-        zsh
         alacritty
-        vim
         git
         wget
         fzf
@@ -87,6 +85,11 @@
     programs.gnupg.agent = {
         enable = true;
         enableSSHSupport = true;
+    };
+    programs.vim = {
+        enable = true;
+        package = pkgs.vim-full;
+        defaultEditor = true;
     };
     programs.zsh.enable = true;
     programs.firefox.enable = true;
