@@ -25,7 +25,10 @@
         vim
         git
         wget
+        fzf
 	curl
+	binutils
+	gcc
 	gnumake
 	just
         go
