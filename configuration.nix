@@ -82,6 +82,11 @@
         variant = "";
     };
     services.openssh.enable = true;
+    services.tailscale = {
+      enable = true;
+      useRoutingFeatures = "both";
+      extraSetFlags = ["--accept-routes"];
+    };
 
     programs.gnupg.agent = {
         enable = true;
