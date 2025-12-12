@@ -12,6 +12,9 @@
     boot.loader.systemd-boot.enable = true;
     boot.loader.efi.canTouchEfiVariables = true;
 
+    # Podman!!!
+    virtualisation.podman.enable = true;
+
     networking.hostName = "katz";
     networking.wireless.enable = true;
     networking.networkmanager.enable = true;
@@ -36,7 +39,6 @@
 
     hardware.graphics.enable = true;
 
-    services.openssh.enable = true;
     services.xserver.enable = true;
     services.xserver.videoDrivers = [ "nvidia" ];
     services.xserver.windowManager.i3.enable = true;
@@ -44,8 +46,12 @@
         layout = "us";
         variant = "";
     };
+    services.openssh.enable = true;
+    programs.gnupg.agent = {
+        enable = true;
+        enableSSHSupport = true;
+    };
 
-    virtualisation.podman.enable = true;
 
     time.timeZone = "Europe/Berlin";
     i18n.defaultLocale = "en_US.UTF-8";
