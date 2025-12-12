@@ -25,7 +25,9 @@
         vim
         git
         wget
-        curl
+	curl
+	gnumake
+	just
         go
         podman
         kubectl
