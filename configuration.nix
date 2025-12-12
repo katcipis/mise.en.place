@@ -1,35 +1,61 @@
 { config, pkgs, ... }:
 {
-    environment.systemPackages = [
-        pkgs.i3
-        pkgs.zsh
-        pkgs.alacritty
-        pkgs.vim
-        pkgs.git
-        pkgs.go
-        pkgs.podman
-        pkgs.kubectl
-        pkgs.google-cloud-sdk
-        pkgs.tailscale
-        pkgs.chromium
-        pkgs.spotify
-        pkgs.slack
+    imports =
+    [ # Include the results of the hardware scan (not versioned).
+      ./hardware-configuration.nix
+    ];
+
+    # Allow unfree packages
+    nixpkgs.config.allowUnfree = true;
+
+    # Bootloader.
+    boot.loader.systemd-boot.enable = true;
+    boot.loader.efi.canTouchEfiVariables = true;
+
+    networking.hostName = "katz";
+    networking.wireless.enable = true;
+    networking.networkmanager.enable = true;
+
+    environment.systemPackages = with pkgs; [
+        i3
+        zsh
+        alacritty
+        vim
+        git
+        wget
+        curl
+        go
+        podman
+        kubectl
+        google-cloud-sdk
+        tailscale
+        chromium
+        spotify
+        slack
     ];
 
     hardware.graphics.enable = true;
 
+    services.openssh.enable = true;
     services.xserver.enable = true;
     services.xserver.videoDrivers = [ "nvidia" ];
     services.xserver.windowManager.i3.enable = true;
+    services.xserver.xkb = {
+        layout = "us";
+        variant = "";
+    };
 
     virtualisation.podman.enable = true;
 
+    time.timeZone = "Europe/Berlin";
+    i18n.defaultLocale = "en_US.UTF-8";
+
     users.users.katz = {
         isNormalUser = true;
-        home = "/home/katz";
-        extraGroups = [
-            "wheel"
-            "networkmanager"
-        ];
+        description = "Tiago Katcipis";
+        extraGroups = [ "networkmanager" "wheel" ];
+        packages = with pkgs; [];
     };
+
+    system.stateVersion = "25.11";
 }
