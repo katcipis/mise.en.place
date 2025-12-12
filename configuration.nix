@@ -35,7 +35,6 @@
         kubectl
         google-cloud-sdk
         google-chrome
-        tailscale
         spotify
         slack
     ];
