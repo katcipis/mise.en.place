@@ -83,10 +83,12 @@
         variant = "";
     };
     services.openssh.enable = true;
+
     programs.gnupg.agent = {
         enable = true;
         enableSSHSupport = true;
     };
+    programs.zsh.enable = true;
     programs.firefox.enable = true;
 
 
@@ -97,6 +99,7 @@
         isNormalUser = true;
         description = "Tiago Katcipis";
         extraGroups = [ "networkmanager" "wheel" ];
+        shell = pkgs.zsh;
         packages = with pkgs; [];
     };
 
