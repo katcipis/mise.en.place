@@ -24,6 +24,7 @@
         git
         wget
         fzf
+        bash
 	curl
 	binutils
 	gcc
