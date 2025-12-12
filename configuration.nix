@@ -11,6 +11,7 @@
         pkgs.kubectl
         pkgs.google-cloud-sdk
         pkgs.tailscale
+        pkgs.chromium
         pkgs.spotify
         pkgs.slack
     ];
