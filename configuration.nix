@@ -33,6 +33,7 @@
         bash
 	curl
 	binutils
+	pkg-config
 	gcc
 	gnumake
 	just
