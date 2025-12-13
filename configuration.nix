@@ -33,9 +33,9 @@
         bash
 	curl
 	binutils
-	pkg-config
 	gcc
 	gnumake
+        fontconfig
 	just
         nvidia-container-toolkit
         go
