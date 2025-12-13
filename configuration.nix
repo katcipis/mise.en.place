@@ -19,7 +19,7 @@
           # Create a `docker` alias for podman, to use it as a drop-in replacement
           dockerCompat = true;
         };
-      };
+    };
 
     networking.hostName = "katz";
     networking.networkmanager.enable = true;
@@ -36,15 +36,15 @@
 	gcc
 	gnumake
 	just
+        nvidia-container-toolkit
         go
-        kubectl
-        google-cloud-sdk
         google-chrome
         spotify
         slack
     ];
 
     hardware.graphics.enable = true;
+    hardware.nvidia-container-toolkit.enable = true;
     hardware.nvidia = {
         modesetting.enable = true;
         # Nvidia power management. Experimental, and can cause sleep/suspend to fail.
