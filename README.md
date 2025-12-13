@@ -8,3 +8,23 @@ need during the course of the shift is at the ready at arm’s reach,
 your defenses are deployed.
 —Anthony Bourdain
 ```
+
+## Switching NixOS configuration
+
+Change the `configuration.nix` and run:
+
+```sh
+sudo make
+```
+
+## Installing other configs
+
+```sh
+make config
+```
+
+## Installing other tools (on $HOME)
+
+```sh
+make tools
+```

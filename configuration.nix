@@ -38,6 +38,7 @@
 	just
         nvidia-container-toolkit
         go
+        python3
         google-chrome
         spotify
         slack
