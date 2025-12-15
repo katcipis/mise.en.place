@@ -44,6 +44,7 @@
         nvidia-container-toolkit
         go
         python3
+        nixfmt-rfc-style
         flameshot
         google-chrome
         vlc
