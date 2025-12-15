@@ -116,6 +116,10 @@
     time.timeZone = "Europe/Berlin";
     i18n.defaultLocale = "en_US.UTF-8";
 
+    fonts.packages = with pkgs; [
+      nerd-fonts.go-mono
+    ];
+
     users.users.katz = {
         isNormalUser = true;
         description = "Tiago Katcipis";
