@@ -34,6 +34,7 @@
         bash
 	curl
         jq
+        csvq
         lazygit
 	binutils
 	gcc
@@ -45,6 +46,7 @@
         python3
         flameshot
         google-chrome
+        vlc
         spotify
         slack
     ];
