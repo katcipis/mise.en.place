@@ -7,3 +7,6 @@ config:
 
 tools:
 	./scripts/gcloud
+
+fmt:
+	nixfmt configuration.nix
