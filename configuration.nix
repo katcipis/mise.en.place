@@ -33,6 +33,8 @@
         fzf
         bash
 	curl
+        jq
+        lazygit
 	binutils
 	gcc
 	gnumake
