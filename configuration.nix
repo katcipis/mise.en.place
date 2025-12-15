@@ -43,6 +43,7 @@
         nvidia-container-toolkit
         go
         python3
+        flameshot
         google-chrome
         spotify
         slack
