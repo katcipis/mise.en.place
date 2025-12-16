@@ -37,6 +37,7 @@
     csvq
     lazygit
     binutils
+    ctags
     gcc
     gnumake
     fontconfig
@@ -44,6 +45,7 @@
     nvidia-container-toolkit
     go
     python3
+    terraform
     nixfmt-rfc-style
     flameshot
     google-chrome
