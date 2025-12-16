@@ -27,7 +27,7 @@
   environment.systemPackages = with pkgs; [
     i3
     pavucontrol
-    alacritty
+    imagemagick
     git
     wget
     fzf
