@@ -114,6 +114,7 @@
   };
   programs.zsh.enable = true;
   programs.firefox.enable = true;
+  programs.slock.enable = true;
 
   time.timeZone = "Europe/Berlin";
   i18n.defaultLocale = "en_US.UTF-8";
