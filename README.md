@@ -9,28 +9,22 @@ your defenses are deployed.
 —Anthony Bourdain
 ```
 
-# Setup ISO
+## Switching NixOS configuration
 
-On an arch linux host just run:
+Change the `configuration.nix` and run:
 
+```sh
+sudo make
 ```
-make iso
+
+## Installing other configs
+
+```sh
+make config
 ```
 
-And it will create a live arch linux image with the mise en place scripts
-inside the home of all users in the built ISO.
+## Installing other tools (on $HOME)
 
-# Install
-
-First of all you need to follow the
-[install instructions](https://wiki.archlinux.org/index.php/installation_guide).
-
-DO NOT FORGET to configure locale properly (see the guide) or a lot of odd
-shit WILL happen.
-
-The **pre-bootstrap.sh** should be run after you run the base installer
-from archlinux but before your restart the machine and boot only your
-disk install.
-
-After you reboot you can run **bootstrap.sh** to install all the amazing software
-and configure some stuff like locale.
+```sh
+make tools
+```

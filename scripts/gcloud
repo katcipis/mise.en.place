@@ -1,12 +1,12 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 set -o errexit
 set -o nounset
 
 workdir=$(mktemp -d)
-basedir=$HOME/.local
-installdir=$basedir/google-cloud-sdk
-version="489.0.0"
+basedir="${HOME}/.local"
+installdir="${basedir}/google-cloud-sdk"
+version="549.0.1"
 
 cd "${workdir}"
 curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-${version}-linux-x86_64.tar.gz

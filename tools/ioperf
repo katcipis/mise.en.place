@@ -1,7 +1,0 @@
-#!/bin/bash
-
-set -o errexit
-set -o nounset
-
-polling_interval=1
-iostat -xz $polling_interval

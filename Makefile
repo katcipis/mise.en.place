@@ -1,27 +1,12 @@
-.PHONY: usb
-usb:
-	sudo dd bs=4M if=$(iso) of=$(dev) status=progress && sync
+switch:
+	cp configuration.nix /etc/nixos
+	nixos-rebuild switch
 
-.PHONY: xcfg
-xcfg:
-	./hack/x-cfg.sh $(lang)
+config:
+	cp i3.config "${HOME}/.config/i3/config"
 
-.PHONY: wm
-wm:
-	./hack/i3-cfg.sh
+tools:
+	./scripts/gcloud
 
-.PHONY: term
-term:
-	./hack/term-cfg.sh
-
-.PHONY: iso-deps
-iso-deps:
-	pacman -S archiso edk2-ovmf qemu
-
-.PHONY: iso
-iso:
-	./buildiso
-
-.PHONY: test
-test:
-	run_archiso -i $(iso)
+fmt:
+	nixfmt configuration.nix
